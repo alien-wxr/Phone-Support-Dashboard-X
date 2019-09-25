@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="99FDE5EECF4B25E93A5FCBE7874FBBF629F76013531E44F6E35E0EEE7AE85FA977765F2DE2099D63E6CC88DF25C028AF0753F01A5D450F533681C2BFCE2DFA93" Timestamp="1D57380000CD82E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="e47cfa74d2bd4ffdbd3109eb09454cbd" RootNamespaceId="dfe6a629190d466e9f953afaa6c5cde2" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="8cb1d9d092c5499bbc1897e086ee4bc5" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="60353119098a4c8dbb582412737eac85" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="d553b28350fe421c9149d581637353a3" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+				<Text Height="[float]16" Id="da52b5049a3f49938bcc7d332122653e" Left="[float]10" Text="[string]SR" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]12" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]19">
+					<FontSetting FontFamily="Arial" FontSize="10" FontStyle="Italic" Id="3509afbd49014dc686a07be52c2b48eb" />
+				</Text>
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="447729d93fde4fff892249459f0111fa" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="WebApplication" Id="df83f8765a0c44718281a09637f0b2b3" Name="Configuration1">
+			<CompilerSymbolTable Id="1ceb0e85cce94bc4a987b49c36b144c5" xmlns="http://www.ni.com/PlatformFramework" />
+			<WebApplicationOutputTypeProperties Id="2c0079ade1054bd2b3bbe43949606761" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="511d090636194a62832ba917beadc7e8" Id="550bf29ef3804b66863b9a644369331c" TopLevel="True" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="e2827773038a43158f45d4d1e3eab036" Id="9dd3e831a8d044d5b015551951d9f8cf" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="9098475126c445c28074481dca8e727f" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="7ff6a980650d460ba7841980d635642c" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="35aa809a203c40aa9e2db10e6860a78b" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="dfe6a629190d466e9f953afaa6c5cde2" Name="Dashboard X">
+				<SourceFileReference Id="511d090636194a62832ba917beadc7e8" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="main.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="main.gviweb" />
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="d8df59af70f1458db85b9bc1c6133403" Name="Resources">
+					<EmbeddedDefinitionReference Id="e2827773038a43158f45d4d1e3eab036" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Background.png">
+						<ExternalFile>
+							<p.StoragePath>"Resources\\Background.png"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+				</NameScopingEnvoy>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="33eb0e6fb86f4bad85d3c863b84d0992" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Dashboard X.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="df83f8765a0c44718281a09637f0b2b3" Id="d5b85e6b68094becba32b37c080de6f4" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
