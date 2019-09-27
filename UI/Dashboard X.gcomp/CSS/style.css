@@ -1,0 +1,12 @@
+/* Change AE Photo into a circle one */
+.AEphoto {
+    height:         200px;
+    width:          200px;
+    border-radius:  100%;
+    overflow: hidden;
+}
+
+/* Change circle Bar's color */
+.circleBar {
+    --ni-fill-background: #3ab878;
+}
