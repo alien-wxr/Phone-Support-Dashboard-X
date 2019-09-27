@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8DFAB42689CDFA9FF9C04A66CA7C95774DCCD73E4D3A16CF29693C2FF59423C1B1E92A2F55F69ACD49CAEAA0E2A23FC56F845210DA65F0BF36AB0F2A952A3BC6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4D30727C3F84ACE87CB1592CCC5AC18E515382D2D1231F865B6945676AFDFBA91E59095D96BC26283F8CB68B464B5CBF97ED69FC4B5E42136D5E0359D325808D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Builders/SystemDesigner" Name="http://www.ni.com/Builders/SystemDesigner/SystemModel" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
@@ -573,8 +574,9 @@
 				<SourceFileReference Bindings="EnvoyManager" Id="ca14a6b59dad424c83f4045fdb5daad3" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-skyline-utilities-src-19.0.0.niaddon" StoragePath="ref://NI/Skyline/utilities-src/19.0.0" />
 				<SourceFileReference Bindings="EnvoyManager" Id="b62e6e0bd764440fbb2c4446e5fb2eff" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-visa-base-src-18.5.0.niaddon" StoragePath="ref://NI/VISA/Base-src/18.5.0" />
 			</EmbeddedDefinitionReference>
+			<SourceFileReference Bindings="EnvoyManager" Id="13905f7c442f4050910d521d77374568" ModelDefinitionType="{http://www.ni.com/Data}DataIndexDefinition" Name="data.xml" StoragePath="NI Project Data\data.xml" />
 		</NameScopingEnvoy>
-		<SourceFileReference Id="24bbe98adc114ad296362812319896d1" ModelDefinitionType="SystemManagementDefinition" Name="SystemDesigner" StoragePath="SystemDesigner" />
+		<SourceFileReference Id="24bbe98adc114ad296362812319896d1" ModelDefinitionType="SystemManagementDefinition" Name="SystemDesigner_2" StoragePath="SystemDesigner" />
 	</Project>
 	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
