@@ -1,5 +1,5 @@
 /* Change AE Photo into a circle one */
-.AEphoto {
+.AE-Photo {
     height:         200px;
     width:          200px;
     border-radius:  100%;
@@ -19,4 +19,15 @@
 /* Change circle Bar's color into yellow -- Away state */
 .yellowBar {
     --ni-fill-background: #fff568;
+}
+
+/* change Card's Background */
+.card {
+    background: red;
+    border: none;
+}
+
+/* change the bar */
+.bar {
+    --ni-fill-background: transparent;
 }
