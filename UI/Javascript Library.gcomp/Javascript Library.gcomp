@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="8235370FBBFEA9C8599CDFDD0B3C1D54CA43404AC7DE1783A618E72999433F8A00D9328716FAC0A11D99B3585667EA5F565F104BE8D7595395D1B61CF51C3C7C" Timestamp="1D576730015A668" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="JavaScript Library" Name="http://www.ni.com/JavaScriptLibrary" OldestCompatibleVersion="6.4.0.49152" Version="6.4.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="9c2cfb26b63a4d6ca4fa3b029634f93e" RootNamespaceId="10b20d71c0de4e9a9e4b9de682eb730b" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="806e9a7878f24df6ac1a850285c18545" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="c9ddd1592834629a0592131beefd5ab" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="e4f125a66a14e13a8359981fc7f08f4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="445e16ad3b724fd08a908c4306bb31f4" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="194b522ce32c485ca0e2ae1cba80785a" Name="Configuration1">
+			<CompilerSymbolTable Id="66303e4e420347948006ad819b567c71" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="ea8f802e381f4e91b31056610e8c4d95" Exported="True" Id="af9b4d23d0a84a78801ab53cb8864eb9" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5e2e611acd614a7ebfda44a689a036df" Id="c19a858c80a041e082c6d41e3cc31708" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="4090a30002494c9381dbb4751c2cb0bb" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="557375dd425b46e7a916f6de1c083914" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="7f11fbe302db49188a46eef722e008e1" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="10b20d71c0de4e9a9e4b9de682eb730b" Name="Javascript Library">
+				<SourceFileReference Bindings="EnvoyManager" Id="ea8f802e381f4e91b31056610e8c4d95" ModelDefinitionType="{http://www.ni.com/JavaScriptLibrary}JavaScriptLibrary" Name="Javascript Library.jsli" StoragePath="Javascript Library.jsli" />
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a0f8f496f54745589fc4089f0588ba89" Name="script">
+					<EmbeddedDefinitionReference Id="5e2e611acd614a7ebfda44a689a036df" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="myscript.js">
+						<ExternalFile>
+							<p.StoragePath>"script\\myscript.js"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+				</NameScopingEnvoy>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="ed381f72ddd04e03ac92bd0285caf64c" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Javascript Library.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="194b522ce32c485ca0e2ae1cba80785a" Id="91cea4d51dc04faaae63267802f6a92b" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
