@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B25C9DCC88CEDAF2024F022D7FBB0A6F1105BF6C84A9A690F8F750C917B6AAE5001997C060127FA9FF25EE00B03DEAC622CF9CE9B8D3086A0EDC113C730E6BCB" Timestamp="1D576692919B297" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="50244797B6869DB7C4E49F6C38D688C4A7A4C27695A0C86FE004159CACAC99B4495F545BDD50FCEEA90B64942C689A2FBDEDDC297DC2E64332CFA0388A2DD46C" Timestamp="1D57672EAE3AEE7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -49,8 +49,7 @@
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="86db255ca39e4c0eafbea16b958ff2d0" Id="1cd557998fda46468a3b6375e630dc12" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="9fb984d67ffc43c69a45baf6169a3eb9" Id="cef1b9e3678b4bb59141c9d31113feaa" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="f6793b30d008489587c1626b476c778a" Id="520ca29343b64b2391e32d469231ccb2" />
-			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="648f14bbdbda41f483b1b32f106b0551" Id="72940f98242c4cf2915d3286f7c1a1b2" />
-			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="c586796a6d194073af2ed2c9b1b1398a" Id="b704d784b60948fe9296ca1596797980" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="9c894dbc17a47d3a5900ffe77f66240" Id="3c6c4b8ea9b14a68a2357049aa5dc01b" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="9098475126c445c28074481dca8e727f" xmlns="http://www.ni.com/PlatformFramework">
@@ -210,16 +209,9 @@
 					</ExternalFile>
 				</EmbeddedDefinitionReference>
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="9aae763413fd49a9b30d99ac58815e32" Name="css">
-					<EmbeddedDefinitionReference Id="648f14bbdbda41f483b1b32f106b0551" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="style.css">
+					<EmbeddedDefinitionReference Id="9c894dbc17a47d3a5900ffe77f66240" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="mystyle.css">
 						<ExternalFile>
-							<p.StoragePath>"css\\style.css"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-				</NameScopingEnvoy>
-				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="1ce1eaecfb6c4e5b8db39eb055ece63b" Name="script">
-					<EmbeddedDefinitionReference Id="c586796a6d194073af2ed2c9b1b1398a" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="mysript.js">
-						<ExternalFile>
-							<p.StoragePath>"script\\mysript.js"</p.StoragePath>
+							<p.StoragePath>"css\\mystyle.css"</p.StoragePath>
 						</ExternalFile>
 					</EmbeddedDefinitionReference>
 				</NameScopingEnvoy>

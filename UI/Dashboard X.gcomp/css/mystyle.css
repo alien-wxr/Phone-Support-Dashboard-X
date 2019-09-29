@@ -6,7 +6,17 @@
     overflow: hidden;
 }
 
-/* Change circle Bar's color */
-.circleBar {
+/* Change circle Bar's color into green -- Available state */
+.greenBar {
     --ni-fill-background: #3ab878;
+}
+
+/* Change circle Bar's color into red -- Talking state */
+.redBar {
+    --ni-fill-background: #EE1C25;
+}
+
+/* Change circle Bar's color into yellow -- Away state */
+.yellowBar {
+    --ni-fill-background: #fff568;
 }

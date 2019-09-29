@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4D30727C3F84ACE87CB1592CCC5AC18E515382D2D1231F865B6945676AFDFBA91E59095D96BC26283F8CB68B464B5CBF97ED69FC4B5E42136D5E0359D325808D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="212CDDD27DFFD23C1FF0FFEA9B3E0283F7D55AD5D37CB217257B0DE54BFF67AF143C4DC4540773FCE56C35FAA96675A7F9C1B68D3436D0806862A039805CF6E1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Builders/SystemDesigner" Name="http://www.ni.com/Builders/SystemDesigner/SystemModel" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
@@ -39,10 +39,14 @@
 						</Instance>
 						<Instance Id="43c91089cf334d87a945efe189340f01" Source="{http://www.ni.com/SystemDesigner/Common/SystemModel}NetworkAdapter" />
 						<Instance Id="2295b0aeb482487d8221502349105a88" Source="{http://www.ni.com/SystemDesigner/Common/SystemModel}SerialInterface" />
+						<Instance Id="d367d9b92a4f44a2817dc5c4da008117" Source="{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent">
+							<Symbols p8:Path="[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent" p9:ShowInDiagram="True" p10:Process.AliasName="Javascript Library.gcomp" p10:Process.AssociatedIdentifier="6d090ac88fb446e8bdd9556817a9535" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="19c810479094431b97d52d0e2f0d1649" Name="Root Superimposition">
 							<Superimpose Source="8c9e82dc3f9c4704bbc06d3f9b0eccbc" />
 							<Superimpose Source="50f511b6112b4e0e9d056582920cae2f">
 								<Superimpose Parent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="80d2eda2da8647fc941076f9f259382f" />
+								<Superimpose Parent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="d367d9b92a4f44a2817dc5c4da008117" />
 							</Superimpose>
 							<Superimpose Source="5e90b698d15540da8fc9ae1e23e984d6">
 								<Superimpose Parent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector" Source="43c91089cf334d87a945efe189340f01" />
@@ -52,11 +56,14 @@
 					</MappingManager>
 				</EnvoySuperimpositionContainer>
 				<SystemDiagramRootDiagram Id="eceee108896e42a39f062439c3961f21">
-					<SystemHardware Bounds="140 120 315 190" Facade="PartsView" HasLayoutManager="True" Id="d358ec1d671247d18a7ff3902d7a9b6e" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice">
-						<SystemHardwareGroupDiagram Bounds="0 65 315 110" Id="d9ed4960384f48739e34c436a7833b00">
-							<SystemHardware Bounds="2 0 311 110" Facade="PartsView" Id="5c4e98f369d84c9c93edb534bff86cf7" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule">
-								<SystemHardwareGroupDiagram Bounds="0 35 311 62" GroupName="Software" GroupUniqueId="Software" Id="18e47909e08c48ad842454653920ff84">
+					<SystemHardware Bounds="140 120 315 215" Facade="PartsView" HasLayoutManager="True" Id="d358ec1d671247d18a7ff3902d7a9b6e" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice">
+						<SystemHardwareGroupDiagram Bounds="0 65 315 135" Id="d9ed4960384f48739e34c436a7833b00">
+							<SystemHardware Bounds="2 0 311 135" Facade="PartsView" Id="5c4e98f369d84c9c93edb534bff86cf7" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule">
+								<SystemHardwareGroupDiagram Bounds="0 35 311 87" GroupName="Software" GroupUniqueId="Software" Id="18e47909e08c48ad842454653920ff84">
 									<SystemHardware Bounds="5 15 301 25" Facade="PartsViewLeaf" Id="df1a7b00ca254478814ca16da86a03ed" MainLabel="$aliasName" SystemModelContent="{:/80d2eda2da8647fc941076f9f259382f}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent]Process.ApplicationComponent">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 40 301 25" Facade="PartsViewLeaf" Id="c47287575bc4e238eae5b6008b02971" MainLabel="$aliasName" SystemModelContent="{:/d367d9b92a4f44a2817dc5c4da008117}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent">
 										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 									</SystemHardware>
 								</SystemHardwareGroupDiagram>
@@ -189,6 +196,7 @@
 						<WeakDefaultComponentConfigurationReference Id="dc250bb1c01b4f729faecb9a919d1ee9" PackageName="ni-analysis-advanced-src-1.0.8.2.niaddon" Target="AAL_Optimization.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="2318fe533b604668bd66672cfcc59647" PackageName="ni-analysis-advanced-src-1.0.8.2.niaddon" Target="AAL_Zeros.gcomp" />
 						<ComponentConfigurationReferenceDependencySource Id="51360ff1a50a484baa7001c7ec556d49" Target="Dashboard X.gcomp::Configuration1" />
+						<ComponentConfigurationReferenceDependencySource Id="f8799bb716854596939c36b640f6ec6e" Target="Javascript Library.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="6278d1f1a43f4212bbfe06aad2fea5af" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -227,6 +235,7 @@
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
 					</EmbeddedDefinitionReference>
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="39810a489afc4428bca7477f570b965e" ModelDefinitionType="ComponentDefinition" Name="Dashboard X.gcomp" StoragePath="Dashboard X.gcomp\Dashboard X.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="d6b386dd43d1440f8587c36146754a3c" ModelDefinitionType="ComponentDefinition" Name="Javascript Library.gcomp" StoragePath="Javascript Library.gcomp\Javascript Library.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="8831a0e68f1f457db82a3b87debe5a50" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
@@ -329,6 +338,7 @@
 						<WeakDefaultComponentConfigurationReference Id="3cb763ef3a514069a66c10d10e31a228" PackageName="ni-visa-base-src-18.5.0.niaddon" Target="VISA.gcomp" />
 						<ComponentConfigurationReference AssociatedEnvoyId="9616bf5d0d9a4d84b447715cc8fef44b" ConfigName="Default" Id="cfc34309f1a54c41a9c519d0d082ec85" />
 						<ComponentConfigurationReferenceDependencySource Id="48ad53bed25a46eb9629be0263db86a8" Target="Dashboard X.gcomp::Configuration1" />
+						<ComponentConfigurationReferenceDependencySource Id="a666b8f6ef884ce6b8585d19b40a99f7" Target="Javascript Library.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="f23ae6500cdf4fe4a937e79d649ab9c5" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -367,6 +377,7 @@
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
 					</EmbeddedDefinitionReference>
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="a9b3ff5adc3940b4b3051da8924be5e2" ModelDefinitionType="ComponentDefinition" Name="Dashboard X.gcomp" StoragePath="Dashboard X.gcomp\Dashboard X.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="6d090ac88fb446e8bdd9556817a9535" ModelDefinitionType="ComponentDefinition" Name="Javascript Library.gcomp" StoragePath="Javascript Library.gcomp\Javascript Library.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="d871437de8314b9bb64706e9fd9afe30" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
