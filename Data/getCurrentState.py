@@ -1,3 +1,17 @@
+##############################################
+#   getCurrentState.py
+#   Phone-Support-Dashboard-X/Data
+#
+#   Function:
+#       get the currentState data from the 
+#       xmltype permalink
+#
+#   Created by Xiaorong Wang on 2019/10/11.
+###############################################
+
+
+
+
 import spider
 from bs4 import BeautifulSoup
 import operator
