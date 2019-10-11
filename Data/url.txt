@@ -1,1 +1,1 @@
-http://us-dal-cuic-p.natinst.com:8081/cuicui/permalink/?viewId=65B8C92C10000165005C5FD87D5BEAE0&linkType=htmlType&viewType=Grid&refreshRate=15
+http://us-dal-cuic-p.natinst.com:8081/cuicui/permalink/?viewId=65B8C92C10000165005C5FD87D5BEAE0&linkType=xmlType&viewType=Grid
