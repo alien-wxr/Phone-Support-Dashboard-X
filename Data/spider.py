@@ -1,5 +1,5 @@
 ###############################################
-#   getXML.py
+#   spider.py
 #   Phone-Support-Dashboard-X/Data
 #
 #   Function:
@@ -12,9 +12,8 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import time
-import operator
 
-def getXML(file):
+def spider(file):
     with open(file,'r') as f:
         url = f.readline()
         f.close()
