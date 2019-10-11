@@ -33,6 +33,6 @@ xml = [list(t) for t in set(tuple(_) for _ in xml)]
 xml.sort(key=operator.itemgetter(3))
 
 for item in xml:
-    #for item2 in item:
-    #    print(item2.ljust(20,' '), end='|')
-    #print()
+    for item2 in item:
+        print(item2.ljust(20,' '), end='|')
+    print()
