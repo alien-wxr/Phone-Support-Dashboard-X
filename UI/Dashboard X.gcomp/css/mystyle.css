@@ -1,7 +1,7 @@
 /* Change AE Photo into a circle one */
 .AE-Photo {
-    height:         200px;
-    width:          200px;
+    height:         160px;
+    width:          160px;
     border-radius:  100%;
     overflow: hidden;
 }
@@ -29,5 +29,5 @@
 
 /* change the bar */
 .bar {
-    --ni-fill-background: transparent;
+    --ni-fill-background: red;
 }
