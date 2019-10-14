@@ -14,6 +14,7 @@
 
 import time
 import os
+import getCurrentState
 
 localtime = time.localtime(time.time())
 
@@ -23,13 +24,39 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
 
     #   Code has been run today
     if (os.path.exists("./Data/currentState.txt")):
+        #   read data
+        f = open("./Data/currentState.txt","r")
+        oldtime = f.readline()
+        print(oldtime)
+        
+        f.close()
+        #   processing
+
+        #   save data
         f = open("./Data/currentState.txt","w")
-        f.write("test1")
+        
+        f.write(str(int(time.time()))+'\n')
+        xml = getCurrentState.get()
+        len = [16,2,8,18,9,11,8,8,21,6]
+        for item in xml:
+            i = 0
+            while (i < 10):
+                f.write(item[i].ljust(len[i],' ')+'|')
+                i = i+1
+            f.write('\n')
         f.close()
     #   Code hasn't been run today
     else:
         f = open("./Data/currentState.txt","w")
-        f.write("test2")
+        f.write(str(int(time.time()))+'\n')
+        xml = getCurrentState.get()
+        len = [16,2,8,18,9,11,8,8,21,6]
+        for item in xml:
+            i = 0
+            while (i < 10):
+                f.write(item[i].ljust(len[i],' ')+'|')
+                i = i+1
+            f.write('\n')
         f.close()
 else:
     os.remove("./Data/currentState.txt")
