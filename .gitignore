@@ -7,3 +7,4 @@ UI/.DS_Store
 UI/Dashboard X.gcomp/.DS_Store
 .DS_Store
 *.pyc
+Data/currentState.txt
