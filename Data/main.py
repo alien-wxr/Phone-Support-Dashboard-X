@@ -17,6 +17,7 @@ import os
 import getCurrentState
 
 localtime = time.localtime(time.time())
+itemLen = [16,2,8,18,9,11,8,8,21,6]
 
 #   only run between 9 AM and 6 PM
 if (localtime[3] >= 9 and localtime[3] <= 18):
@@ -26,7 +27,23 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
     if (os.path.exists("./Data/currentState.txt")):
         #   read data
         f = open("./Data/currentState.txt","r")
-        oldtime = f.readline()
+        oldtime =   f.readline()
+        freeNum =   f.readline()
+        busyNum =   f.readline()
+        awayNum =   f.readline()
+        allTalks=   f.readline()
+        lines = f.readlines()
+        i = 0
+        state = []
+        while (i!=len(lines)):
+            j = 0
+            item = []
+            while (j < len(itemLen)):
+                item.append(lines[i])
+                i = i+1
+                j = j+1
+            state.append(item)
+            
         print(oldtime)
         
         f.close()
@@ -37,11 +54,10 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         
         f.write(str(int(time.time()))+'\n')
         xml = getCurrentState.get()
-        len = [16,2,8,18,9,11,8,8,21,6]
         for item in xml:
             i = 0
             while (i < 10):
-                f.write(item[i].ljust(len[i],' ')+'|')
+                f.write(item[i].ljust(itemLen[i],' ')+'|')
                 i = i+1
             f.write('\n')
         f.close()
@@ -50,11 +66,10 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         f = open("./Data/currentState.txt","w")
         f.write(str(int(time.time()))+'\n')
         xml = getCurrentState.get()
-        len = [16,2,8,18,9,11,8,8,21,6]
         for item in xml:
             i = 0
             while (i < 10):
-                f.write(item[i].ljust(len[i],' ')+'|')
+                f.write(item[i].ljust(itemLen[i],' ')+'|')
                 i = i+1
             f.write('\n')
         f.close()
