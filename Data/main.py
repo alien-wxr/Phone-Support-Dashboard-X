@@ -43,7 +43,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 i = i+1
                 j = j+1
             state.append(item)
-            
+
         print(oldtime)
         
         f.close()
@@ -51,27 +51,28 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
 
         #   save data
         f = open("./Data/currentState.txt","w")
-        
         f.write(str(int(time.time()))+'\n')
+        f.write(freeNum+'\n')
+        f.write(busyNum+'\n')
+        f.write(awayNum+'\n')
+        f.write(allTalks+'\n')
         xml = getCurrentState.get()
         for item in xml:
-            i = 0
-            while (i < 10):
-                f.write(item[i].ljust(itemLen[i],' ')+'|')
-                i = i+1
-            f.write('\n')
+            for item2 in item:
+                f.write(item2+'\n')
         f.close()
     #   Code hasn't been run today
     else:
-        f = open("./Data/currentState.txt","w")
+        ff = open("./Data/currentState.txt","w")
         f.write(str(int(time.time()))+'\n')
+        f.write(freeNum+'\n')
+        f.write(busyNum+'\n')
+        f.write(awayNum+'\n')
+        f.write(allTalks+'\n')
         xml = getCurrentState.get()
         for item in xml:
-            i = 0
-            while (i < 10):
-                f.write(item[i].ljust(itemLen[i],' ')+'|')
-                i = i+1
-            f.write('\n')
+            for item2 in item:
+                f.write(item2+'\n')
         f.close()
 else:
     os.remove("./Data/currentState.txt")
