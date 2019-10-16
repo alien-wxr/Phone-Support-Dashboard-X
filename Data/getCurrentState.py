@@ -27,14 +27,15 @@ def get():
         for col_tag in row_tag.children:
             if (col_tag['name']=='PQName'):
                 l.append('0')
+            elif (col_tag['name']=='PQStep'):
+                l.append('0')
+            elif (len(col_tag.contents) != 0):
+                l.append(col_tag.contents[0])
             else:
-                if (len(col_tag.contents) != 0):
-                    l.append(col_tag.contents[0])
-                else:
-                    l.append('NULL')
+                l.append('NULL')
         xml.append(l)
 
     xml = [list(t) for t in set(tuple(_) for _ in xml)]
     xml.sort(key=operator.itemgetter(3))
-    
+
     return xml
