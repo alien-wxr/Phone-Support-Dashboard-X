@@ -17,7 +17,7 @@ import os
 import getCurrentState
 
 localtime = time.localtime(time.time())
-itemLen = [16,2,8,18,9,11,8,8,21,6]
+itemLen = [16,2,8,18]
 
 #   only run between 9 AM and 6 PM
 if (localtime[3] >= 9 and localtime[3] <= 18):
@@ -32,6 +32,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         busyNum =   f.readline()
         awayNum =   f.readline()
         allTalks=   f.readline()
+        waitNum =   f.readline()
         lines = f.readlines()
         i = 0
         state = []
@@ -43,34 +44,56 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 i = i+1
                 j = j+1
             state.append(item)
-
         print(oldtime)
-        
         f.close()
-        #   processing
 
+        #processing
+        xml =  getCurrentState.get()
+        stateList = []
+        freeNum   = 0
+        busyNum   = 0
+        awayNum   = 0
+        allTalks  = 0
+        waitNum   = 0
+        for item in xml:
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9]}
+            stateList.append(stateDict)
         #   save data
         f = open("./Data/currentState.txt","w")
         f.write(str(int(time.time()))+'\n')
-        f.write(freeNum+'\n')
-        f.write(busyNum+'\n')
-        f.write(awayNum+'\n')
-        f.write(allTalks+'\n')
-        xml = getCurrentState.get()
-        for item in xml:
+        f.write(str(freeNum)+'\n')
+        f.write(str(busyNum)+'\n')
+        f.write(str(awayNum)+'\n')
+        f.write(str(allTalks)+'\n')
+        f.write(str(waitNum)+'\n')
+        for stateDict in stateList:
+            item = stateDict.values()
             for item2 in item:
                 f.write(item2+'\n')
         f.close()
     #   Code hasn't been run today
     else:
-        ff = open("./Data/currentState.txt","w")
-        f.write(str(int(time.time()))+'\n')
-        f.write(freeNum+'\n')
-        f.write(busyNum+'\n')
-        f.write(awayNum+'\n')
-        f.write(allTalks+'\n')
-        xml = getCurrentState.get()
+        #processing
+        xml =  getCurrentState.get()
+        stateList = []
+        freeNum   = 0
+        busyNum   = 0
+        awayNum   = 0
+        allTalks  = 0
+        waitNum   = 0
         for item in xml:
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9]}
+            stateList.append(stateDict)
+        #   save data
+        f = open("./Data/currentState.txt","w")
+        f.write(str(int(time.time()))+'\n')
+        f.write(str(freeNum)+'\n')
+        f.write(str(busyNum)+'\n')
+        f.write(str(awayNum)+'\n')
+        f.write(str(allTalks)+'\n')
+        f.write(str(waitNum)+'\n')
+        for stateDict in stateList:
+            item = stateDict.values()
             for item2 in item:
                 f.write(item2+'\n')
         f.close()
