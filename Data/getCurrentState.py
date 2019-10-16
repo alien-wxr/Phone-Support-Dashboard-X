@@ -25,13 +25,16 @@ def get():
     for row_tag in soup.report.children:
         l = []
         for col_tag in row_tag.children:
-            if (len(col_tag.contents) != 0):
-                l.append(col_tag.contents[0])
+            if (col_tag['name']=='PQName'):
+                l.append('0')
             else:
-                l.append('NULL')
+                if (len(col_tag.contents) != 0):
+                    l.append(col_tag.contents[0])
+                else:
+                    l.append('NULL')
         xml.append(l)
 
     xml = [list(t) for t in set(tuple(_) for _ in xml)]
     xml.sort(key=operator.itemgetter(3))
     
-    return xml;
+    return xml
