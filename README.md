@@ -22,3 +22,7 @@
 1. Add animation to the Dashboard
 2. Provide a publish version
 3. python with OOP
+
+### Bugs to fix
+
+1. The **main.py** cannot handle the situation that **currentState.txt** is damaged, which happens because python crashed when saving **currentState.txt**.
