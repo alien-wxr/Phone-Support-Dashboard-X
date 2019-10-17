@@ -52,8 +52,26 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         xml =  getCurrentState.get()
         stateList = []
         for item in oldStateList:
-            stateDict = {'FullName':item[0],'AgentState':item[1],'TimeInState':item[2],'OnShift':item[3],'currentStatePeriod':'','Talks':''}
-            stateList.append(stateDict)
+            oldStateDict = {'FullName':item[0],'AgentState':item[1],'TimeInState':item[2],'OnShift':item[3],'currentStatePeriod':'','Talks':''}
+            oldStateList.append(oldStateDict)
+        
+        for stateDict in stateList:
+            if stateDict['OnShift']=='true':
+                if stateDict['AgentState']=='Ready':
+                    stateDict['AgentState']='Free'
+                    freeNum = freeNum+1
+                elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
+                    stateDict['AgentState']='Busy'
+                    busyNum = busyNum+1
+                    allTalks = allTalks+1
+                elif stateDict['AgentState']=='Not Ready':
+                    stateDict['AgentState']='Away'
+                    awayNum = awayNum+1
+                else:
+                    stateDict['AgentState']='ErrState'
+            else:
+                stateDict['AgentState']='Offline'
+        
         #   save data
         f = open("./Data/currentState.txt","w")
         f.write(str(int(time.time()))+'\n')
@@ -98,6 +116,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                     stateDict['AgentState']='Busy'
                     busyNum = busyNum+1
+                    allTalks = allTalks+1
                 elif stateDict['AgentState']=='Not Ready':
                     stateDict['AgentState']='Away'
                     awayNum = awayNum+1
@@ -119,6 +138,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             for item2 in item:
                 f.write(item2+'\n')
         f.close()
+        #   for debug
         for stateDict in stateList:
             item = stateDict.values()
             for item2 in item:
