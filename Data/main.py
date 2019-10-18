@@ -39,11 +39,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         oldStateList = []
         while (i!=len(lines)):
             j = 0
-            item = []
-            while (j < itemLen):
-                item.append(lines[i].replace('\r','').replace('\n',''))
-                i = i+1
-                j = j+1
+            oldStateDict = {}
             oldStateDict = {'FullName':lines[i].replace('\r','').replace('\n','')}
             i = i+1
             oldStateDict = {'AgentState':lines[i].replace('\r','').replace('\n','')}
@@ -56,13 +52,9 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             i = i+1
             oldStateDict = {'Talks':lines[i].replace('\r','').replace('\n','')}
             i = i+1
-            oldStateList.append(item)
+            oldStateList.append(oldStateDict)
         print(oldtime)
         f.close()
-
-        for item in oldStateList:
-            oldStateDict = {'FullName':item[0],'AgentState':item[1],'TimeInState':item[2],'OnShift':item[3],'CurrentStatePeriod':'','Talks':''}
-            oldStateList.append(oldStateDict)
 
         #   processing
         xml =  getCurrentState.get()
