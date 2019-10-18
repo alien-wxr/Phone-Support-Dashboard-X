@@ -1,9 +1,14 @@
 /* Change AE Photo into a circle one */
 .AE-Photo {
-    height:         180px;
-    width:          180px;
     border-radius:  100%;
     overflow: hidden;
+}
+
+/* Change String Indicator into a transparent background */
+.string-indicator {
+    --ni-foreground-color: white;
+    --ni-indicator-background-color: transparent;
+    --ni-border: none;
 }
 
 /* Change circle Bar's color into green -- Available state */
