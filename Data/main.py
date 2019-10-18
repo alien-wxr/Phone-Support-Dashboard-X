@@ -44,16 +44,50 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 item.append(lines[i].replace('\r','').replace('\n',''))
                 i = i+1
                 j = j+1
+            oldStateDict = {'FullName':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
+            oldStateDict = {'AgentState':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
+            oldStateDict = {'TimeInState':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
+            oldStateDict = {'OnShift':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
+            oldStateDict = {'CurrentStatePeriod':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
+            oldStateDict = {'Talks':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
             oldStateList.append(item)
         print(oldtime)
         f.close()
 
+        for item in oldStateList:
+            oldStateDict = {'FullName':item[0],'AgentState':item[1],'TimeInState':item[2],'OnShift':item[3],'CurrentStatePeriod':'','Talks':''}
+            oldStateList.append(oldStateDict)
+
         #   processing
         xml =  getCurrentState.get()
         stateList = []
-        for item in oldStateList:
-            stateDict = {'FullName':item[0],'AgentState':item[1],'TimeInState':item[2],'OnShift':item[3],'currentStatePeriod':'','Talks':''}
+        for item in xml:
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentStatePeriod':'0','Talks':'0'}
             stateList.append(stateDict)
+        
+        for stateDict in stateList:
+            if stateDict['OnShift']=='true':
+                if stateDict['AgentState']=='Ready':
+                    stateDict['AgentState']='Free'
+                    freeNum = freeNum+1
+                elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
+                    stateDict['AgentState']='Busy'
+                    busyNum = busyNum+1
+                    allTalks = allTalks+1
+                elif stateDict['AgentState']=='Not Ready':
+                    stateDict['AgentState']='Away'
+                    awayNum = awayNum+1
+                else:
+                    stateDict['AgentState']='ErrState'
+            else:
+                stateDict['AgentState']='Offline'
+        
         #   save data
         f = open("./Data/currentState.txt","w")
         f.write(str(int(time.time()))+'\n')
@@ -87,7 +121,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         xml =  getCurrentState.get()
         
         for item in xml:
-            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'currentStatePeriod':'0','Talks':'0'}
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentStatePeriod':'0','Talks':'0'}
             stateList.append(stateDict)
 
         for stateDict in stateList:
@@ -98,6 +132,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                     stateDict['AgentState']='Busy'
                     busyNum = busyNum+1
+                    allTalks = allTalks+1
                 elif stateDict['AgentState']=='Not Ready':
                     stateDict['AgentState']='Away'
                     awayNum = awayNum+1
@@ -119,6 +154,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             for item2 in item:
                 f.write(item2+'\n')
         f.close()
+        #   for debug
         for stateDict in stateList:
             item = stateDict.values()
             for item2 in item:
