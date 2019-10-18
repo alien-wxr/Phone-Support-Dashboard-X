@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="50244797B6869DB7C4E49F6C38D688C4A7A4C27695A0C86FE004159CACAC99B4495F545BDD50FCEEA90B64942C689A2FBDEDDC297DC2E64332CFA0388A2DD46C" Timestamp="1D57672EAE3AEE7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="39EC10B3AFCBB01DCB39F67A0BB0FD9BA474D9B259DF11CDDDD237E3BAA6FCCB8AFDC6ABD8659D53F8DDDD9B724605489789F1AB6BD43059E62722DB3198CCFF" Timestamp="1D585992A6B54B9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -50,6 +50,10 @@
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="9fb984d67ffc43c69a45baf6169a3eb9" Id="cef1b9e3678b4bb59141c9d31113feaa" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="f6793b30d008489587c1626b476c778a" Id="520ca29343b64b2391e32d469231ccb2" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="9c894dbc17a47d3a5900ffe77f66240" Id="3c6c4b8ea9b14a68a2357049aa5dc01b" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="a7dd51552c4001ba0a7aecc0e5fa9c" Id="2ee56d78f2d2470286da539754bf8056" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="ffe1f0561b5a48259a21cde48de6f9d7" Id="6b87361ae64642358be92bb79a5f4629" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5b8f89992f7940609527d40b7beb4340" Id="e48b011d7b824ab3b78ddceec003cdf2" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2ca22446709242d1a3d338ea1987b977" Id="8270f9e1d19146dd8cfa78fc75881342" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="9098475126c445c28074481dca8e727f" xmlns="http://www.ni.com/PlatformFramework">
@@ -62,6 +66,26 @@
 					<EmbeddedDefinitionReference Id="e2827773038a43158f45d4d1e3eab036" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Background.png">
 						<ExternalFile>
 							<p.StoragePath>"Resources\\Background.png"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="a7dd51552c4001ba0a7aecc0e5fa9c" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="CardBG.png">
+						<ExternalFile>
+							<p.StoragePath>"Resources\\CardBG.png"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="ffe1f0561b5a48259a21cde48de6f9d7" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="greenCircle.png">
+						<ExternalFile>
+							<p.StoragePath>"Resources\\greenCircle.png"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="5b8f89992f7940609527d40b7beb4340" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="redCircle.png">
+						<ExternalFile>
+							<p.StoragePath>"Resources\\redCircle.png"</p.StoragePath>
+						</ExternalFile>
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="2ca22446709242d1a3d338ea1987b977" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="yellowCircle.png">
+						<ExternalFile>
+							<p.StoragePath>"Resources\\yellowCircle.png"</p.StoragePath>
 						</ExternalFile>
 					</EmbeddedDefinitionReference>
 				</NameScopingEnvoy>
