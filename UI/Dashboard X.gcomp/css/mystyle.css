@@ -1,7 +1,7 @@
 /* Change AE Photo into a circle one */
 .AE-Photo {
-    height:         160px;
-    width:          160px;
+    height:         180px;
+    width:          180px;
     border-radius:  100%;
     overflow: hidden;
 }
@@ -23,7 +23,7 @@
 
 /* change Card's Background */
 .card {
-    background: red;
+    background: transparent;
     border: none;
 }
 
