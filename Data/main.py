@@ -17,7 +17,7 @@ import os
 import getCurrentState
 
 localtime = time.localtime(time.time())
-itemLen = 6
+itemLen = 7
 
 #   only run between 9 AM and 6 PM
 if (localtime[3] >= 9 and localtime[3] <= 18):
@@ -28,7 +28,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
 
         #   read data
         f = open("./Data/currentState.txt","r")
-        oldtime =   int(f.readline().replace('\r','').replace('\n',''))
+        oldTime =   int(f.readline().replace('\r','').replace('\n',''))
         freeNum =   int(f.readline().replace('\r','').replace('\n',''))
         busyNum =   int(f.readline().replace('\r','').replace('\n',''))
         awayNum =   int(f.readline().replace('\r','').replace('\n',''))
@@ -48,41 +48,78 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             i = i+1
             oldStateDict = {'OnShift':lines[i].replace('\r','').replace('\n','')}
             i = i+1
+            oldStateDict = {'CurrentState':lines[i].replace('\r','').replace('\n','')}
+            i = i+1
             oldStateDict = {'CurrentStatePeriod':lines[i].replace('\r','').replace('\n','')}
             i = i+1
             oldStateDict = {'Talks':lines[i].replace('\r','').replace('\n','')}
             i = i+1
             oldStateList.append(oldStateDict)
-        print(oldtime)
+        print(oldTime)
         f.close()
 
-        #   processing
+        #   pre-processing
+        currentTime = int(time.time())
         xml =  getCurrentState.get()
         stateList = []
         for item in xml:
-            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentStatePeriod':'0','Talks':'0'}
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
             stateList.append(stateDict)
-        
+        freeNum = 0
+        busyNum = 0
+        awayNum = 0
         for stateDict in stateList:
             if stateDict['OnShift']=='true':
                 if stateDict['AgentState']=='Ready':
-                    stateDict['AgentState']='Free'
+                    stateDict['CurrentState']='Free'
                     freeNum = freeNum+1
                 elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
-                    stateDict['AgentState']='Busy'
+                    stateDict['CurrentState']='Busy'
                     busyNum = busyNum+1
-                    allTalks = allTalks+1
                 elif stateDict['AgentState']=='Not Ready':
-                    stateDict['AgentState']='Away'
+                    stateDict['CurrentState']='Away'
                     awayNum = awayNum+1
                 else:
-                    stateDict['AgentState']='ErrState'
+                    stateDict['CurrentState']='ErrState'
             else:
-                stateDict['AgentState']='Offline'
+                stateDict['CurrentsState']='Offline'
+        
+        #   processing
+        for stateDict in stateList:
+            flag = True
+            for oldStateDict in oldStateList:
+                if stateDict['FullName']==oldStateDict['FullName']:
+                    flag = False
+                    #   Current State Period Calculating
+                    if stateDict['OnShift']=='true':
+                        if 
+                    if stateDict['AgentState']=='NULL' and oldStateDict['AgentState']!='ErrState':
+                        #   capture a Null state accidentally, keep the old state
+                        stateDict['AgentState']=oldStateDict['AgentState']
+                        if stateDict['AgentState']=='Free':
+                            freeNum = freeNum+1
+                        elif stateDict['AgentState']=='Busy':
+                            busyNum = busyNum+1
+                        elif stateDict['AgentState']=='Away':
+                            awayNum = awayNum+1
+                    if stateDict['AgentState']==oldStateDict['AgentState']:
+                        stateDict['CurrentTimePeriod'] = oldStateDict['CurrentTimePeriod']+currentTime-oldTime
+                    #   Talks Recording
+                    if oldStateDict['AgentState']=='Free' and stateDict['AgentState']=='Talking':
+                        allTalks = allTalks+1
+                        stateDict['Talks'] = oldStateDict['Talks']+1
+            #   cannot find the same AE data from oldStateList
+            if flag:
+                #   Talks Recording
+                if stateDict['AgentState']=='Busy':
+                    allTalks = allTalks+1
+                    stateDict['Talks'] = stateDict['Talks']+1
+                #   Current State Period Calculating
+                stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
         
         #   save data
         f = open("./Data/currentState.txt","w")
-        f.write(str(int(time.time()))+'\n')
+        f.write(str(currentTime)+'\n')
         f.write(str(freeNum)+'\n')
         f.write(str(busyNum)+'\n')
         f.write(str(awayNum)+'\n')
@@ -110,32 +147,33 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         waitNum   = 0
 
         #   processing
+        currentTime = int(time.time())
         xml =  getCurrentState.get()
         
         for item in xml:
-            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentStatePeriod':'0','Talks':'0'}
+            stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
             stateList.append(stateDict)
 
         for stateDict in stateList:
             if stateDict['OnShift']=='true':
                 if stateDict['AgentState']=='Ready':
-                    stateDict['AgentState']='Free'
+                    stateDict['CurrentState']='Free'
                     freeNum = freeNum+1
                 elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
-                    stateDict['AgentState']='Busy'
+                    stateDict['CurrentState']='Busy'
                     busyNum = busyNum+1
                     allTalks = allTalks+1
                 elif stateDict['AgentState']=='Not Ready':
-                    stateDict['AgentState']='Away'
+                    stateDict['CurrentState']='Away'
                     awayNum = awayNum+1
                 else:
-                    stateDict['AgentState']='ErrState'
+                    stateDict['CurrentState']='ErrState'
             else:
-                stateDict['AgentState']='Offline'
+                stateDict['CurrentState']='Offline'
 
         #   save data
         f = open("./Data/currentState.txt","w")
-        f.write(str(int(time.time()))+'\n')
+        f.write(str(currentTime)+'\n')
         f.write(str(freeNum)+'\n')
         f.write(str(busyNum)+'\n')
         f.write(str(awayNum)+'\n')
