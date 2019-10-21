@@ -17,7 +17,6 @@ import os
 import getCurrentState
 
 localtime = time.localtime(time.time())
-itemLen = 7
 
 #   only run between 9 AM and 6 PM
 if (localtime[3] >= 9 and localtime[3] <= 18):
@@ -82,7 +81,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 else:
                     stateDict['CurrentState']='ErrState'
             else:
-                stateDict['CurrentsState']='Offline'
+                stateDict['CurrentState']='Offline'
         
         #   processing
         for stateDict in stateList:
@@ -90,9 +89,15 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             for oldStateDict in oldStateList:
                 if stateDict['FullName']==oldStateDict['FullName']:
                     flag = False
+                    #   Talks Recording
+                    if oldStateDict['CurrentState']=='Free' and stateDict['CurrentState']=='Busy':
+                        allTalks = allTalks+1
+                        stateDict['Talks'] = oldStateDict['Talks']+1
                     #   Current State Period Calculating
-                    if stateDict['OnShift']=='true':
-                        if 
+                    if stateDict['AgentState']==oldStateDict['AgentState'] and stateDict['OnShift']==oldStateDict['OnShift']:
+                        #   no state changing
+                        stateDict['CurrentStatePeriod'] = oldStateDict['CurrentStatePeriod']+currentTime-oldTime
+                        
                     if stateDict['AgentState']=='NULL' and oldStateDict['AgentState']!='ErrState':
                         #   capture a Null state accidentally, keep the old state
                         stateDict['AgentState']=oldStateDict['AgentState']
@@ -104,10 +109,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                             awayNum = awayNum+1
                     if stateDict['AgentState']==oldStateDict['AgentState']:
                         stateDict['CurrentTimePeriod'] = oldStateDict['CurrentTimePeriod']+currentTime-oldTime
-                    #   Talks Recording
-                    if oldStateDict['AgentState']=='Free' and stateDict['AgentState']=='Talking':
-                        allTalks = allTalks+1
-                        stateDict['Talks'] = oldStateDict['Talks']+1
+                    
             #   cannot find the same AE data from oldStateList
             if flag:
                 #   Talks Recording
@@ -155,6 +157,10 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             stateList.append(stateDict)
 
         for stateDict in stateList:
+            if stateDict['TimeInState']!='NULL':
+                stateDict['CurrentTimeInPeriod']='NULL'
+            else:
+                stateDict['CurrentTimeInPeriod']=stateDict['TimeInState']
             if stateDict['OnShift']=='true':
                 if stateDict['AgentState']=='Ready':
                     stateDict['CurrentState']='Free'
@@ -169,7 +175,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                 else:
                     stateDict['CurrentState']='ErrState'
             else:
-                stateDict['CurrentState']='Offline'
+                stateDict['CurrentsState']='Offline'
 
         #   save data
         f = open("./Data/currentState.txt","w")
