@@ -39,19 +39,19 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
         while (i!=len(lines)):
             j = 0
             oldStateDict = {}
-            oldStateDict = {'FullName':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['FullName'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'AgentState':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['AgentState'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'TimeInState':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['TimeInState'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'OnShift':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['OnShift'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'CurrentState':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['CurrentState'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'CurrentStatePeriod':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['CurrentStatePeriod'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
-            oldStateDict = {'Talks':lines[i].replace('\r','').replace('\n','')}
+            oldStateDict['Talks'] = lines[i].replace('\r','').replace('\n','')
             i = i+1
             oldStateList.append(oldStateDict)
         print(oldTime)
@@ -93,23 +93,20 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                     if oldStateDict['CurrentState']=='Free' and stateDict['CurrentState']=='Busy':
                         allTalks = allTalks+1
                         stateDict['Talks'] = str(int(oldStateDict['Talks'])+1)
+                    else:
+                        stateDict['Talks'] = oldStateDict['Talks']
                     #   Current State Period Calculating
                     if stateDict['AgentState']==oldStateDict['AgentState'] and stateDict['OnShift']==oldStateDict['OnShift']:
                         #   no state changing
-                        stateDict['CurrentStatePeriod'] = oldStateDict['CurrentStatePeriod']+currentTime-oldTime
-                        
-                    if stateDict['AgentState']=='NULL' and oldStateDict['AgentState']!='ErrState':
-                        #   capture a Null state accidentally, keep the old state
-                        stateDict['AgentState']=oldStateDict['AgentState']
-                        if stateDict['AgentState']=='Free':
-                            freeNum = freeNum+1
-                        elif stateDict['AgentState']=='Busy':
-                            busyNum = busyNum+1
-                        elif stateDict['AgentState']=='Away':
-                            awayNum = awayNum+1
-                    if stateDict['AgentState']==oldStateDict['AgentState']:
-                        stateDict['CurrentTimePeriod'] = oldStateDict['CurrentTimePeriod']+currentTime-oldTime
-                    
+                        if oldStateDict['CurrentStatePeriod']=='NULL':
+                            stateDict['CurrentStatePeriod'] = 'NULL'
+                        else:
+                            stateDict['CurrentStatePeriod'] = str(int(oldStateDict['CurrentStatePeriod'])+currentTime-oldTime)
+                    elif stateDict['AgentState']=='Work Ready' and oldStateDict['AgentState']=='Talking':
+                        #   change from talking to work ready
+                        stateDict['CurrentStatePeriod'] = str(int(oldStateDict['CurrentStatePeriod'])+currentTime-oldTime)
+                    else:
+                        stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
             #   cannot find the same AE data from oldStateList
             if flag:
                 #   Talks Recording
