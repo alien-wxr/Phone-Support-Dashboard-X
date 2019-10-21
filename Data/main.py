@@ -92,7 +92,7 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                     #   Talks Recording
                     if oldStateDict['CurrentState']=='Free' and stateDict['CurrentState']=='Busy':
                         allTalks = allTalks+1
-                        stateDict['Talks'] = oldStateDict['Talks']+1
+                        stateDict['Talks'] = str(int(oldStateDict['Talks'])+1)
                     #   Current State Period Calculating
                     if stateDict['AgentState']==oldStateDict['AgentState'] and stateDict['OnShift']==oldStateDict['OnShift']:
                         #   no state changing
