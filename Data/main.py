@@ -157,10 +157,10 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
             stateList.append(stateDict)
 
         for stateDict in stateList:
-            if stateDict['TimeInState']!='NULL':
-                stateDict['CurrentTimeInPeriod']='NULL'
+            if stateDict['TimeInState']=='NULL':
+                stateDict['CurrentStatePeriod']='NULL'
             else:
-                stateDict['CurrentTimeInPeriod']=stateDict['TimeInState']
+                stateDict['CurrentStatePeriod']=stateDict['TimeInState']
             if stateDict['OnShift']=='true':
                 if stateDict['AgentState']=='Ready':
                     stateDict['CurrentState']='Free'
@@ -169,13 +169,14 @@ if (localtime[3] >= 9 and localtime[3] <= 18):
                     stateDict['CurrentState']='Busy'
                     busyNum = busyNum+1
                     allTalks = allTalks+1
+                    stateDict['Talks']=str(int(stateDict['Talks'])+1)
                 elif stateDict['AgentState']=='Not Ready':
                     stateDict['CurrentState']='Away'
                     awayNum = awayNum+1
                 else:
                     stateDict['CurrentState']='ErrState'
             else:
-                stateDict['CurrentsState']='Offline'
+                stateDict['CurrentState']='Offline'
 
         #   save data
         f = open("./Data/currentState.txt","w")
