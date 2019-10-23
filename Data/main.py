@@ -15,6 +15,7 @@
 import time
 import os
 import getCurrentState
+import getCallinQueue
 
 localtime = time.localtime(time.time())
 
@@ -60,6 +61,7 @@ try:
             #   pre-processing
             currentTime = int(time.time())
             xml =  getCurrentState.get()
+            waitNum = getCallinQueue.get()
             stateList = []
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
@@ -148,6 +150,7 @@ try:
             #   processing
             currentTime = int(time.time())
             xml =  getCurrentState.get()
+            waitNum = getCallinQueue.get()
             
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
@@ -200,3 +203,5 @@ try:
 except:
     f = open("./Data/errorLog.txt","w")
     f.write("error")
+    f.close()
+    print('error')
