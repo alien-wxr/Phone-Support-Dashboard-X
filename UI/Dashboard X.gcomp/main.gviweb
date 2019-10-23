@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B6F761B2F1E8FA75CE55A7C520E0838CB3FFE9B27955019F81594A1A63C68BE1AD6600538F42BB4615EACA2B56544B08C342B33508233FD83BACD92C09F3F7D9" Timestamp="1D5859B03760AD4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3959317C68E1DACCAEE2B7F7707345B9F83D2660CEC937A6BA3DD68E5C308373AFD1FD40864A23F58203C2BEF2C774895EF57111E7E31EFFF2F01B2B4E64E98A" Timestamp="1D5896450AB3101" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -43,7 +43,7 @@
 				<p.Text>Photo1</p.Text>
 			</NodeLabel>
 			<Literal Bounds="650 595 40 15" DataType="Double" Id="3a7d112622704281953a4556239c2fe2" Label="cc2cd5508ea245b09ab94a82f7e7dcff" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>0x4000000000000000</p.Data>
+				<p.Data>0x4040800000000000</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 			</Literal>
 			<NodeLabel AttachedTo="3a7d112622704281953a4556239c2fe2" Bounds="650 577 30 15" Id="cc2cd5508ea245b09ab94a82f7e7dcff" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
@@ -96,11 +96,11 @@
 			</NodeLabel>
 			<Wire Id="dca9101a5d43478ab46237127ce012b2" Joints="N(440a9b21143943cf84ebb91f311dc274:Out)|(685,680) h(15) v(-10) N(38cc68d4748e4f02b61297f35f15111e:c5t0v)|(730,670)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="470f559b0d0a47b0b0d45228c721c224" Joints="N(99e6906bc305412fa766b67f5edcbe7c:Out)|(690,620) N(38cc68d4748e4f02b61297f35f15111e:c0t0v)|(730,620)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="555 690 160 15" DataType="String" Id="b6f86d91df58457ca2edab25ff78c996" Label="4ad21f945b4a4146967fa7850f0846cd" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>Resources/redCircle.png</p.Data>
+			<Literal Bounds="540 690 175 15" DataType="String" Id="b6f86d91df58457ca2edab25ff78c996" Label="4ad21f945b4a4146967fa7850f0846cd" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>Resources/greenCircle.png</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="b6f86d91df58457ca2edab25ff78c996" Bounds="555 708 30 15" Id="4ad21f945b4a4146967fa7850f0846cd" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="b6f86d91df58457ca2edab25ff78c996" Bounds="540 708 30 15" Id="4ad21f945b4a4146967fa7850f0846cd" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Photo1</p.Text>
 			</NodeLabel>
 			<Wire Id="5a4264a9656645ecb923339d2ad4578d" Joints="N(b6f86d91df58457ca2edab25ff78c996:Out)|(715,695) h(5) v(-35) N(38cc68d4748e4f02b61297f35f15111e:c4t0v)|(730,660)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -252,7 +252,7 @@
 				</HtmlStringControl>
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="d85f9f0d4ba444fcaf6639164b9b7e11" LabelOwner="[UIModel]4397d2dd20da4cc19f79ce5ff2a34083" Left="[float]25" Text="[string]FullName" Top="[float]-14" Visible="[bool]False" Width="[float]57" />
 			</HtmlCluster>
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]10" Id="bcac9f3db8894f1cb82174a44e314f64" LabelOwner="[UIModel]9a3e8aeffc4449739f96ba58ea232a69" Left="[float]973" Text="[string]Card_7" Top="[float]428" Visible="[bool]False" Width="[float]10" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="bcac9f3db8894f1cb82174a44e314f64" LabelOwner="[UIModel]9a3e8aeffc4449739f96ba58ea232a69" Left="[float]973" Text="[string]Card_7" Top="[float]428" Visible="[bool]False" Width="[float]43" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlCluster AutoArrange="[AutoArrange]None" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f360ee2e42914e6fa23a3058c02674ef" Extras="[Dictionary&lt;string, string&gt;]&quot;background&quot;=&quot;./Resources/CradBG.png&quot;" Height="[float]360" Id="9a3e8aeffc4449739f96ba58ea232a69" Label="[UIModel]bcac9f3db8894f1cb82174a44e314f64" Left="[float]973" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]7" Top="[float]448" Value="{DataItemBinding Id=ff1239770e6a424693e6bbfba72f5e86}" Width="[float]360" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="3d5dd4f1ef624e91984b72c05358aa50" LabelOwner="[UIModel]3e6caf88baad471b966264fa2d85310b" Left="[float]0" Text="[string]CardBackground" Top="[float]-20" Visible="[bool]False" Width="[float]95" />
 				<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]360" Id="3e6caf88baad471b966264fa2d85310b" Label="[UIModel]3d5dd4f1ef624e91984b72c05358aa50" Left="[float]0" MinHeight="[float]24" MinWidth="[float]24" Source="{ClusterBinding FieldName=CardBackground}" Stretch="[SMStretch]Uniform" TabIndex="[int]3" Top="[float]0" Width="[float]360" />
@@ -278,7 +278,7 @@
 				</HtmlStringControl>
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="660a8ac37ffa443c9ad4d91d0d9f49ef" LabelOwner="[UIModel]dc728939c8cf4f06a5f8f007962b14e5" Left="[float]25" Text="[string]FullName" Top="[float]-14" Visible="[bool]False" Width="[float]57" />
 			</HtmlCluster>
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]10" Id="76db28a74a3c48d2a985e62b7c92d3fe" LabelOwner="[UIModel]b8b9fa6c493e43a8ab8eedb69a986160" Left="[float]564" Text="[string]Card_6" Top="[float]428" Visible="[bool]False" Width="[float]10" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="76db28a74a3c48d2a985e62b7c92d3fe" LabelOwner="[UIModel]b8b9fa6c493e43a8ab8eedb69a986160" Left="[float]564" Text="[string]Card_6" Top="[float]428" Visible="[bool]False" Width="[float]43" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlCluster AutoArrange="[AutoArrange]None" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f360ee2e42914e6fa23a3058c02674ef" Extras="[Dictionary&lt;string, string&gt;]&quot;background&quot;=&quot;./Resources/CradBG.png&quot;" Height="[float]360" Id="b8b9fa6c493e43a8ab8eedb69a986160" Label="[UIModel]76db28a74a3c48d2a985e62b7c92d3fe" Left="[float]564" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]2" Top="[float]448" Value="{DataItemBinding Id=380816565c6f419eafc9af4e9d906615}" Width="[float]360" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="e1ba4c9111e843108e002e389e8eadd1" LabelOwner="[UIModel]36ec4d4bd43f4155b85238abe3cb6ac0" Left="[float]0" Text="[string]CardBackground" Top="[float]-20" Visible="[bool]False" Width="[float]95" />
 				<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]360" Id="36ec4d4bd43f4155b85238abe3cb6ac0" Label="[UIModel]e1ba4c9111e843108e002e389e8eadd1" Left="[float]0" MinHeight="[float]24" MinWidth="[float]24" Source="{ClusterBinding FieldName=CardBackground}" Stretch="[SMStretch]Uniform" TabIndex="[int]3" Top="[float]0" Width="[float]360" />
@@ -317,7 +317,9 @@
 					<HtmlBehavior ClassAttributes="AE-Photo" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlUrlImage>
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="f8d9fc51509f46e2865d257d8a677c07" LabelOwner="[UIModel]3bd8c98705ef4beebabacade4ca901ac" Left="[float]55" Text="[string]Radial Progress Bar" Top="[float]46" Visible="[bool]False" Width="[float]109" />
-				<HtmlLVRadialProgressBar BaseName="[string]Radial Progress Bar" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]250" Id="3bd8c98705ef4beebabacade4ca901ac" Label="[UIModel]f8d9fc51509f46e2865d257d8a677c07" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" />
+				<HtmlLVRadialProgressBar BaseName="[string]Radial Progress Bar" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]250" Id="3bd8c98705ef4beebabacade4ca901ac" Label="[UIModel]f8d9fc51509f46e2865d257d8a677c07" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250">
+					<HtmlBehavior ClassAttributes="" xmlns="http://www.ni.com/PlatformFramework" />
+				</HtmlLVRadialProgressBar>
 				<HtmlBehavior ClassAttributes="card" xmlns="http://www.ni.com/PlatformFramework" />
 				<HtmlStringControl AcceptsReturn="[bool]True" BaseName="[string]String" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]47" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="841e708ffe05478c8ab8c7f35e1223fc" IsReadOnly="[bool]True" Label="[UIModel]dfc5917ab56d4b5391604cdfc6284db0" Left="[float]113" MinHeight="[float]47" MinWidth="[float]20" TabIndex="[int]0" Text="{ClusterBinding FieldName=CurrentStatePeriod}" TextAlignment="[TextAlignment]Center" Top="[float]316" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]134">
 					<HtmlBehavior ClassAttributes="string-indicator" xmlns="http://www.ni.com/PlatformFramework" />
@@ -330,7 +332,7 @@
 				</HtmlStringControl>
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="a47cb48377fe41fa90d8fa71d27acb3d" LabelOwner="[UIModel]49f108af3dcc41a09971b0142be82779" Left="[float]25" Text="[string]FullName" Top="[float]-14" Visible="[bool]False" Width="[float]57" />
 			</HtmlCluster>
-			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]10" Id="f7b67b0f1612485786603129779db903" LabelOwner="[UIModel]14ad613ae9e344149bdffda29a0d44b2" Left="[float]155" Text="[string]Card_5" Top="[float]428" Visible="[bool]False" Width="[float]10" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="f7b67b0f1612485786603129779db903" LabelOwner="[UIModel]14ad613ae9e344149bdffda29a0d44b2" Left="[float]155" Text="[string]Card_5" Top="[float]428" Visible="[bool]False" Width="[float]43" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlCluster AutoArrange="[AutoArrange]None" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f360ee2e42914e6fa23a3058c02674ef" Extras="[Dictionary&lt;string, string&gt;]&quot;background&quot;=&quot;./Resources/CradBG.png&quot;" Height="[float]360" Id="14ad613ae9e344149bdffda29a0d44b2" Label="[UIModel]f7b67b0f1612485786603129779db903" Left="[float]155" MinHeight="[float]24" MinWidth="[float]24" TabIndex="[int]0" Top="[float]448" Value="{DataItemBinding Id=34b38aceb3154856917344f2ae277ff8}" Width="[float]360" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<HtmlLabel Extras="[Dictionary&lt;string, string&gt;]" Height="[float]16" Id="4fd87197a6ee47f79c5505de6abd8d73" LabelOwner="[UIModel]55202b3ff69481e8feff44aadc13bc0" Left="[float]0" Text="[string]CardBackground" Top="[float]-20" Visible="[bool]False" Width="[float]95" />
 				<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Extras="[Dictionary&lt;string, string&gt;]" Height="[float]360" Id="55202b3ff69481e8feff44aadc13bc0" Label="[UIModel]4fd87197a6ee47f79c5505de6abd8d73" Left="[float]0" MinHeight="[float]24" MinWidth="[float]24" Source="{ClusterBinding FieldName=CardBackground}" Stretch="[SMStretch]Uniform" TabIndex="[int]3" Top="[float]0" Width="[float]360" />
