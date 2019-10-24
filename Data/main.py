@@ -41,19 +41,19 @@ try:
                 j = 0
                 oldStateDict = {}
                 oldStateDict['FullName'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['AgentState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['TimeInState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['OnShift'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['CurrentState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['CurrentStatePeriod'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['Talks'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateList.append(oldStateDict)
             print(oldTime)
             f.close()
@@ -73,13 +73,13 @@ try:
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
                         stateDict['CurrentState']='Free'
-                        freeNum = freeNum+1
+                        freeNum += 1
                     elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                         stateDict['CurrentState']='Busy'
-                        busyNum = busyNum+1
+                        busyNum += 1
                     elif stateDict['AgentState']=='Not Ready':
                         stateDict['CurrentState']='Away'
-                        awayNum = awayNum+1
+                        awayNum += 1
                     else:
                         stateDict['CurrentState']='ErrState'
                 else:
@@ -113,8 +113,8 @@ try:
                 if flag:
                     #   Talks Recording
                     if stateDict['AgentState']=='Busy':
-                        allTalks = allTalks+1
-                        stateDict['Talks'] = stateDict['Talks']+1
+                        allTalks += 1
+                        stateDict['Talks'] += 1
                     #   Current State Period Calculating
                     stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
             
@@ -164,15 +164,15 @@ try:
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
                         stateDict['CurrentState']='Free'
-                        freeNum = freeNum+1
+                        freeNum += 1
                     elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                         stateDict['CurrentState']='Busy'
-                        busyNum = busyNum+1
-                        allTalks = allTalks+1
+                        busyNum += 1
+                        allTalks += 1
                         stateDict['Talks']=str(int(stateDict['Talks'])+1)
                     elif stateDict['AgentState']=='Not Ready':
                         stateDict['CurrentState']='Away'
-                        awayNum = awayNum+1
+                        awayNum += 1
                     else:
                         stateDict['CurrentState']='ErrState'
                 else:
