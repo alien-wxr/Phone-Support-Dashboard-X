@@ -15,6 +15,7 @@
 import time
 import os
 import getCurrentState
+import getCallinQueue
 
 localtime = time.localtime(time.time())
 
@@ -40,19 +41,19 @@ try:
                 j = 0
                 oldStateDict = {}
                 oldStateDict['FullName'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['AgentState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['TimeInState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['OnShift'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['CurrentState'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['CurrentStatePeriod'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateDict['Talks'] = lines[i].replace('\r','').replace('\n','')
-                i = i+1
+                i += 1
                 oldStateList.append(oldStateDict)
             print(oldTime)
             f.close()
@@ -60,6 +61,7 @@ try:
             #   pre-processing
             currentTime = int(time.time())
             xml =  getCurrentState.get()
+            waitNum = getCallinQueue.get()
             stateList = []
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
@@ -71,13 +73,13 @@ try:
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
                         stateDict['CurrentState']='Free'
-                        freeNum = freeNum+1
+                        freeNum += 1
                     elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                         stateDict['CurrentState']='Busy'
-                        busyNum = busyNum+1
+                        busyNum += 1
                     elif stateDict['AgentState']=='Not Ready':
                         stateDict['CurrentState']='Away'
-                        awayNum = awayNum+1
+                        awayNum += 1
                     else:
                         stateDict['CurrentState']='ErrState'
                 else:
@@ -111,8 +113,8 @@ try:
                 if flag:
                     #   Talks Recording
                     if stateDict['AgentState']=='Busy':
-                        allTalks = allTalks+1
-                        stateDict['Talks'] = stateDict['Talks']+1
+                        allTalks += 1
+                        stateDict['Talks'] += 1
                     #   Current State Period Calculating
                     stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
             
@@ -148,6 +150,7 @@ try:
             #   processing
             currentTime = int(time.time())
             xml =  getCurrentState.get()
+            waitNum = getCallinQueue.get()
             
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
@@ -161,15 +164,15 @@ try:
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
                         stateDict['CurrentState']='Free'
-                        freeNum = freeNum+1
+                        freeNum += 1
                     elif stateDict['AgentState']=='Talking' or stateDict['AgentState']=='Work Ready':
                         stateDict['CurrentState']='Busy'
-                        busyNum = busyNum+1
-                        allTalks = allTalks+1
+                        busyNum += 1
+                        allTalks += 1
                         stateDict['Talks']=str(int(stateDict['Talks'])+1)
                     elif stateDict['AgentState']=='Not Ready':
                         stateDict['CurrentState']='Away'
-                        awayNum = awayNum+1
+                        awayNum += 1
                     else:
                         stateDict['CurrentState']='ErrState'
                 else:
@@ -200,3 +203,5 @@ try:
 except:
     f = open("./Data/errorLog.txt","w")
     f.write("error")
+    f.close()
+    print('error')
