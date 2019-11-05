@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="39EC10B3AFCBB01DCB39F67A0BB0FD9BA474D9B259DF11CDDDD237E3BAA6FCCB8AFDC6ABD8659D53F8DDDD9B724605489789F1AB6BD43059E62722DB3198CCFF" Timestamp="1D585992A6B54B9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2420F15161A732C6649FB307C18E9FC66ED27E42928EC88C96C0BE2B7480EED3A2AAB15E7673D9C2A63E28BEF347E4826F7F60A12FFA4EDBAD2F2ECDC6724CD0" Timestamp="1D58D76B2D2B364" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -239,6 +239,8 @@
 						</ExternalFile>
 					</EmbeddedDefinitionReference>
 				</NameScopingEnvoy>
+				<SourceFileReference Id="7d93a05e69d4667af0087c36a4f1e79" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="tag.gviweb" />
+				<SourceFileReference Id="1704581157874ee080d11f2d99386417" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="33eb0e6fb86f4bad85d3c863b84d0992" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Dashboard X.gcomp" NameTracksFileName="True">
