@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7E5D6A8B94C7D73E9E05759463F0DCF3A374725A484116A78C66149F11C8C38D453EAA8540FB75214115614EA61FB2CA9889F1EEC27BF3C77F251511A1CD3E4D" Timestamp="1D593CDA264D010" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="67B5DC06480D62EAC1F416BCA22E87A791956CA53F91348D3EC8E3CCF07F14FC0F8FDA8134098D29E0109BA897313FCAAFA19AE3B7D23B08937880915D3E8880" Timestamp="1D593CE4B3AEFFE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -171,6 +171,13 @@
 					<p.Text>value</p.Text>
 				</NodeLabel>
 				<Wire Id="def393dab2fb4422aa8fb1f51e87afa7" Joints="N(58994a62f2dc45b588745a7e6650a150:R1)|(65,60) N(dd82861917194cff9e8b12496328362c:Value)|(93,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="170 65 40 15" DataItem="5c7adffabb88474e9d2b15d569655d1c" Id="a02e9db7422f4886b22dfae6da9b6fe6" Label="ec4fc42c7f8c4336b6ef8da3339ae8a1" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Timestamp" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="a02e9db7422f4886b22dfae6da9b6fe6" Bounds="215 65 63 14" Id="ec4fc42c7f8c4336b6ef8da3339ae8a1" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>time stamp</p.Text>
+				</NodeLabel>
+				<Wire Id="873a7dd8fea4d1791dc859e03b00542" Joints="N(58994a62f2dc45b588745a7e6650a150:R2)|(65,70) N(a02e9db7422f4886b22dfae6da9b6fe6:Value)|(173,70)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopTunnel Bounds="-4 80 13 10" Docking="Left" Id="1b2ddd70cb604cb2945a8c4f71981d1b" Terminals="o0=16946bb76c3046f897a6038388c0b066, i0=f208a05e73324dc1a08b67fbe5ed4f84" />
 				<LoopTunnel Bounds="-4 50 13 10" Docking="Left" Id="de81666568bd44e2a8e35dde698c06bd" Terminals="o0=8444fb782f04438ab97ddd565cb4261a, i0=5f45b316674f47f9a99fdfa4bfba5212" />
 				<LoopTunnel Bounds="301 80 13 10" Docking="Right" Id="5b7b8f4499f941bc97891ced7da46576" Terminals="o0=ab62e90e573a4291adafd965167873e3, i0=ee91023b624d4ecabdf6174fa1b59f4c" />
@@ -233,6 +240,8 @@
 			<Label Height="[float]16" Id="4394fca79db34298a791cf062edea50b" LabelOwner="[UIModel]c3dd5b30624a4e06a21e50f65691df5f" Left="[float]356" Text="[string]loop iteration" Top="[float]144" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="b487bd1e2d50467aa5ac8ce5b64792b9" IsReadOnly="[bool]True" Label="[UIModel]821c3b9bf3f445be840b6b801aeffe7e" Left="[float]452" TabIndex="[int]1" Top="[float]164" Value="{DataItemBinding Id=c14086a33d9145f1a8a6a0bf75da7dc1}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="821c3b9bf3f445be840b6b801aeffe7e" LabelOwner="[UIModel]b487bd1e2d50467aa5ac8ce5b64792b9" Left="[float]452" Text="[string]value" Top="[float]144" Width="[float]28" xmlns="http://www.ni.com/PanelCommon" />
+			<TimeStampTextBox BaseName="[string]Timestamp" Height="[float]24" Id="fcdbf19b31054db08e6eedf4c2ed0811" InteractionMode="[TimeStampTextBoxInteractionModes]ReadOnly" Label="[UIModel]3a1e739d21974572ae9786b2fdda9555" Left="[float]356" Maximum="[PrecisionDateTime]3000-12-31T16:00:00.0Z" Minimum="[PrecisionDateTime]1599-12-31T16:00:00.0Z" TabIndex="[int]2" Top="[float]228" Value="{DataItemBinding Id=5c7adffabb88474e9d2b15d569655d1c}" Width="[float]226" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="3a1e739d21974572ae9786b2fdda9555" LabelOwner="[UIModel]fcdbf19b31054db08e6eedf4c2ed0811" Left="[float]356" Text="[string]time stamp" Top="[float]208" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 		</HtmlFrontPanel>
 		<DataItem DataType="Error" Id="22d82d86a1c0467c9e5519c35e9fcfa7" Name="error in" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -263,6 +272,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="c14086a33d9145f1a8a6a0bf75da7dc1" Name="value" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Timestamp" Id="5c7adffabb88474e9d2b15d569655d1c" Name="time stamp" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>60052752000;0;Utc</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">

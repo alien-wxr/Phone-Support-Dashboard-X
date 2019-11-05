@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="332D8628E3C83A3A9DD6E98D9E949FFEC548A70C870992DEE06D4926D271B7765BACBF8DC83A424AC542B4D64EF0ECDF9A5AF59AF971FB7E59F459662EA08767" Timestamp="1D593CE4AA7D89B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Native target compiler" Name="http://www.ni.com/LabVIEW.NativeBackEndCompiler" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="35a878366664493dabcbebdb8ab64276" RootNamespaceId="13f5214778a8491e9c46f3382b2e2f4a" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="4d6ab483048f4d8dbf0f6adab3c56d71" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="ee5786e109f4672a1e2e41c0b996f65" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="bee07cc33074856a014eef10df7236e" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="263d3796d3604882b45f8a7d6502c104" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="Application" Id="80fc0016a1474ceea4d4e8bca3feefa2" Name="Configuration1">
+			<CompilerSymbolTable Id="17e0c1f41d494a63b196ee7790c41f82" xmlns="http://www.ni.com/PlatformFramework" />
+			<NativeApplicationOutputTypeProperties Id="23076252ca6741b08c59f5f0a2ca75cc" xmlns="http://www.ni.com/LabVIEW.NativeBackEndCompiler" />
+			<ComponentItemProperties AssociatedEnvoyId="f485aa82e18f4219903c575cfc24411d" Id="f6be227d79ce482e8c88fe43579b2e90" TopLevel="True" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="77a65bfdbf194b468759beec7c9b888b" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="ec098fc2fe0c411db5734318c2f4318a" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="9ac638e6fb814eefa62808fb5dfac1a0" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13f5214778a8491e9c46f3382b2e2f4a" Name="desktop">
+				<SourceFileReference Id="f485aa82e18f4219903c575cfc24411d" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="55fe94e94df847a987ceb01878687f39" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="desktop.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="80fc0016a1474ceea4d4e8bca3feefa2" Id="bf2d690d2cc3428ab60558d979f54361" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
