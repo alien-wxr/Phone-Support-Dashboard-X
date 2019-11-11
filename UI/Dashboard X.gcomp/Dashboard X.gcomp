@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2420F15161A732C6649FB307C18E9FC66ED27E42928EC88C96C0BE2B7480EED3A2AAB15E7673D9C2A63E28BEF347E4826F7F60A12FFA4EDBAD2F2ECDC6724CD0" Timestamp="1D58D76B2D2B364" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="32BA264C34E694C14E5FBB77CE032B3803EC82DB3C59C9A321EDBD543BDA71D86E2EBAB0068905A17A5519DFA71AD0DB6DCBDC283DC56BB7906FC059C637CD62" Timestamp="1D598340A250F16" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
-		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
 	</SourceModelFeatureSet>
 	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="e47cfa74d2bd4ffdbd3109eb09454cbd" RootNamespaceId="dfe6a629190d466e9f953afaa6c5cde2" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="8cb1d9d092c5499bbc1897e086ee4bc5" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -54,190 +54,83 @@
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="ffe1f0561b5a48259a21cde48de6f9d7" Id="6b87361ae64642358be92bb79a5f4629" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5b8f89992f7940609527d40b7beb4340" Id="e48b011d7b824ab3b78ddceec003cdf2" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2ca22446709242d1a3d338ea1987b977" Id="8270f9e1d19146dd8cfa78fc75881342" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="94f6b3f2ae1b4523ad0dd29cdea87eef" Id="385a32487af142f481d43bb78a72cc33" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="7050ba6c50324f6385a5e5e7f47a9f7c" Id="ad568e599abf4cacb866b0e50cae9432" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2add55df4e9d4b8bb279d68b2f2c86a3" Id="b69081c8234449f59723dad72d2f51a5" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="fa88fe4dc974942a071210e93e878db" Id="9919ba34685d46c695765848fb694976" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="cfe64caf479849a9be73e9b26207e25e" Id="98ac46dde524e5b80b375fdb42a8844" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="3eb07b35db524ee9be3b1c7edf588060" Id="2e8820ab95944e22a62ee111e06e356e" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="c9aede2a94d141498bf2ac68b7e9b6b8" Id="b22fbe3b274c4709a017187be72f98e0" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="a2e35940e1a74e8ab42e3fe9e0d02407" Id="7030d30eb3204cae916ec1113d305e8f" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="35255d8e6fb147799599fb2020797bcb" Id="8d5d3ca175544c298454124f4b4cd891" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="710dcea7c6f448f48e2ba97a58c707d6" Id="21af31dc36374ada94ba5a660287f4cf" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5f826175824c4c14b9c81f0de739c23b" Id="8a00b8103d6a4b90a295cdec8665ef6b" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="34c46ba6c94c40d3a8ed5726f586656a" Id="de8601e1128949d4b95657f00620a884" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2d7b5e29620c4ea986c601a01fcbc07c" Id="28c784e0353941d2a023714935f76df0" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="378f8fdecd4e4e80bd71ed581fee6668" Id="f61040f5adb94dd8a1b51a54adfb0649" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="3ee26862bd6249bd9b7bfbb5b067acd7" Id="c729112fe21249ca93ef913b1dc9f209" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="9098475126c445c28074481dca8e727f" xmlns="http://www.ni.com/PlatformFramework">
-		<ProjectSettings Id="7ff6a980650d460ba7841980d635642c" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EnvoyManagerRootEnvoy Id="7ff6a980650d460ba7841980d635642c" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
 		<EmbeddedDefinitionReference Id="35aa809a203c40aa9e2db10e6860a78b" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
 			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="dfe6a629190d466e9f953afaa6c5cde2" Name="Dashboard X">
 				<SourceFileReference Id="511d090636194a62832ba917beadc7e8" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="main.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="main.gviweb" />
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="d8df59af70f1458db85b9bc1c6133403" Name="Resources">
-					<EmbeddedDefinitionReference Id="e2827773038a43158f45d4d1e3eab036" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Background.png">
-						<ExternalFile>
-							<p.StoragePath>"Resources\\Background.png"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="a7dd51552c4001ba0a7aecc0e5fa9c" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="CardBG.png">
-						<ExternalFile>
-							<p.StoragePath>"Resources\\CardBG.png"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="ffe1f0561b5a48259a21cde48de6f9d7" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="greenCircle.png">
-						<ExternalFile>
-							<p.StoragePath>"Resources\\greenCircle.png"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="5b8f89992f7940609527d40b7beb4340" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="redCircle.png">
-						<ExternalFile>
-							<p.StoragePath>"Resources\\redCircle.png"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="2ca22446709242d1a3d338ea1987b977" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="yellowCircle.png">
-						<ExternalFile>
-							<p.StoragePath>"Resources\\yellowCircle.png"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
+					<FileReference Bindings=".png" Id="e2827773038a43158f45d4d1e3eab036" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Background.png" StoragePath="Resources\Background.png" />
+					<FileReference Bindings=".png" Id="a7dd51552c4001ba0a7aecc0e5fa9c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="CardBG.png" StoragePath="Resources\CardBG.png" />
+					<FileReference Bindings=".png" Id="ffe1f0561b5a48259a21cde48de6f9d7" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="greenCircle.png" StoragePath="Resources\greenCircle.png" />
+					<FileReference Bindings=".png" Id="5b8f89992f7940609527d40b7beb4340" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="redCircle.png" StoragePath="Resources\redCircle.png" />
+					<FileReference Bindings=".png" Id="2ca22446709242d1a3d338ea1987b977" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="yellowCircle.png" StoragePath="Resources\yellowCircle.png" />
 				</NameScopingEnvoy>
-				<SourceFileReference Id="bc274abf49e140dcb52d1a7a94cd040c" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="main.gvi" StoragePath="main.gvi" />
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="282a7b62cdf843649977a10b0c2591e0" Name="Photos">
-					<EmbeddedDefinitionReference Id="b52ef036365a40479a7397ff7308fb81" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Ayden Foo.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Ayden Foo.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="35c1c1bbf57540539db3088f3bbff170" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Carmen Lai.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Carmen Lai.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="2c6f8d70072342e7992b73908e135023" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Chun Way Yap.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Chun Way Yap.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="dfe8b264f9df4341bfc870dbf00ce499" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Hailong Liu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Hailong Liu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="d817cf350c4e441e9404edf5a39a8790" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="HaiQiang Yuan.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\HaiQiang Yuan.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="f7289c153afd4cf2b08a4fedf40b0947" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Jia Sheng Soo Hoe.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Jia Sheng Soo Hoe.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="d95cd8373b834f4fb9a1a99478fd59c1" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Jixi Su.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Jixi Su.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="ca68c0fda2de4aabb98c43f429eaa130" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Lei Xu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Lei Xu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="dafbd16d490141aab3f3f29087378d11" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Liming Zhang.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Liming Zhang.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="d4ea4e8067d146429995d3cec04d3be5" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Runsheng Zhao.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Runsheng Zhao.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="455e162d34148c1a2ef7331d9cda5ee" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Shaopeng Xu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Shaopeng Xu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="8aad8a8832e54817b4d9dbe2af999e5c" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Xiaoya Xie.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Xiaoya Xie.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="6442351302ef462c9c75c707127c4c17" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Xin Chen.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Xin Chen.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="6729e2ac8bb14810ad06c0a0b519c397" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Xing Heng.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Xing Heng.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="7173730f1d764391a449c8665821e7e0" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yanbin Li.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yanbin Li.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="e80b799db62f4758953a2f4d209b89ef" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yaoming Ren.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yaoming Ren.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="d714f3bd37ba4bc8a3e0e0309f6e7e21" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yi Huang Loy.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yi Huang Loy.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="70edb0d0b9334b51a962e106ae6bf0c2" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yi Xu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yi Xu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="b179ae39865040639ac1db8ac3f53b8d" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yibai Zhao.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yibai Zhao.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="490ea5abac68413589b610dd71381ea8" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yuqi Gu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yuqi Gu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="2b11174f67f94c2a944b91728d0b2754" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Yuxuan Xu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Yuxuan Xu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="7bc255b1ef6b49b5806f60dd923c0120" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Zhaoyong Wu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Zhaoyong Wu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="a68b0c8d0c094bce8d4ca4717723054b" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Zhenyang Gao.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Zhenyang Gao.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="c74f7979e3224e9fa1ba63bc7b57fe25" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Zhenyu Gu.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Zhenyu Gu.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="2f2c230b06644600a9bda2a89a50580a" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Zhi Yang Ong.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Zhi Yang Ong.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="86db255ca39e4c0eafbea16b958ff2d0" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Zhiyuan Xin.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Zhiyuan Xin.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
-					<EmbeddedDefinitionReference Id="9fb984d67ffc43c69a45baf6169a3eb9" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="Ziheng Zhang.jpg">
-						<ExternalFile>
-							<p.StoragePath>"Photos\\Ziheng Zhang.jpg"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
+					<FileReference Bindings=".jpg" Id="b52ef036365a40479a7397ff7308fb81" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Ayden Foo.jpg" StoragePath="Photos\Ayden Foo.jpg" />
+					<FileReference Bindings=".jpg" Id="35c1c1bbf57540539db3088f3bbff170" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Carmen Lai.jpg" StoragePath="Photos\Carmen Lai.jpg" />
+					<FileReference Bindings=".jpg" Id="2c6f8d70072342e7992b73908e135023" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Chun Way Yap.jpg" StoragePath="Photos\Chun Way Yap.jpg" />
+					<FileReference Bindings=".jpg" Id="dfe8b264f9df4341bfc870dbf00ce499" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Hailong Liu.jpg" StoragePath="Photos\Hailong Liu.jpg" />
+					<FileReference Bindings=".jpg" Id="d817cf350c4e441e9404edf5a39a8790" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="HaiQiang Yuan.jpg" StoragePath="Photos\HaiQiang Yuan.jpg" />
+					<FileReference Bindings=".jpg" Id="f7289c153afd4cf2b08a4fedf40b0947" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Jia Sheng Soo Hoe.jpg" StoragePath="Photos\Jia Sheng Soo Hoe.jpg" />
+					<FileReference Bindings=".jpg" Id="d95cd8373b834f4fb9a1a99478fd59c1" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Jixi Su.jpg" StoragePath="Photos\Jixi Su.jpg" />
+					<FileReference Bindings=".jpg" Id="ca68c0fda2de4aabb98c43f429eaa130" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Lei Xu.jpg" StoragePath="Photos\Lei Xu.jpg" />
+					<FileReference Bindings=".jpg" Id="dafbd16d490141aab3f3f29087378d11" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Liming Zhang.jpg" StoragePath="Photos\Liming Zhang.jpg" />
+					<FileReference Bindings=".jpg" Id="d4ea4e8067d146429995d3cec04d3be5" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Runsheng Zhao.jpg" StoragePath="Photos\Runsheng Zhao.jpg" />
+					<FileReference Bindings=".jpg" Id="455e162d34148c1a2ef7331d9cda5ee" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Shaopeng Xu.jpg" StoragePath="Photos\Shaopeng Xu.jpg" />
+					<FileReference Bindings=".jpg" Id="8aad8a8832e54817b4d9dbe2af999e5c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Xiaoya Xie.jpg" StoragePath="Photos\Xiaoya Xie.jpg" />
+					<FileReference Bindings=".jpg" Id="6442351302ef462c9c75c707127c4c17" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Xin Chen.jpg" StoragePath="Photos\Xin Chen.jpg" />
+					<FileReference Bindings=".jpg" Id="6729e2ac8bb14810ad06c0a0b519c397" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Xing Heng.jpg" StoragePath="Photos\Xing Heng.jpg" />
+					<FileReference Bindings=".jpg" Id="7173730f1d764391a449c8665821e7e0" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yanbin Li.jpg" StoragePath="Photos\Yanbin Li.jpg" />
+					<FileReference Bindings=".jpg" Id="e80b799db62f4758953a2f4d209b89ef" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yaoming Ren.jpg" StoragePath="Photos\Yaoming Ren.jpg" />
+					<FileReference Bindings=".jpg" Id="d714f3bd37ba4bc8a3e0e0309f6e7e21" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yi Huang Loy.jpg" StoragePath="Photos\Yi Huang Loy.jpg" />
+					<FileReference Bindings=".jpg" Id="70edb0d0b9334b51a962e106ae6bf0c2" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yi Xu.jpg" StoragePath="Photos\Yi Xu.jpg" />
+					<FileReference Bindings=".jpg" Id="b179ae39865040639ac1db8ac3f53b8d" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yibai Zhao.jpg" StoragePath="Photos\Yibai Zhao.jpg" />
+					<FileReference Bindings=".jpg" Id="490ea5abac68413589b610dd71381ea8" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yuqi Gu.jpg" StoragePath="Photos\Yuqi Gu.jpg" />
+					<FileReference Bindings=".jpg" Id="2b11174f67f94c2a944b91728d0b2754" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yuxuan Xu.jpg" StoragePath="Photos\Yuxuan Xu.jpg" />
+					<FileReference Bindings=".jpg" Id="7bc255b1ef6b49b5806f60dd923c0120" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhaoyong Wu.jpg" StoragePath="Photos\Zhaoyong Wu.jpg" />
+					<FileReference Bindings=".jpg" Id="a68b0c8d0c094bce8d4ca4717723054b" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhenyang Gao.jpg" StoragePath="Photos\Zhenyang Gao.jpg" />
+					<FileReference Bindings=".jpg" Id="c74f7979e3224e9fa1ba63bc7b57fe25" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhenyu Gu.jpg" StoragePath="Photos\Zhenyu Gu.jpg" />
+					<FileReference Bindings=".jpg" Id="2f2c230b06644600a9bda2a89a50580a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhi Yang Ong.jpg" StoragePath="Photos\Zhi Yang Ong.jpg" />
+					<FileReference Bindings=".jpg" Id="86db255ca39e4c0eafbea16b958ff2d0" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhiyuan Xin.jpg" StoragePath="Photos\Zhiyuan Xin.jpg" />
+					<FileReference Bindings=".jpg" Id="9fb984d67ffc43c69a45baf6169a3eb9" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Ziheng Zhang.jpg" StoragePath="Photos\Ziheng Zhang.jpg" />
+					<FileReference Bindings=".jpg" Id="94f6b3f2ae1b4523ad0dd29cdea87eef" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Bin Zheng.jpg" StoragePath="Photos\Bin Zheng.jpg" />
+					<FileReference Bindings=".jpg" Id="7050ba6c50324f6385a5e5e7f47a9f7c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Fan Wang.jpg" StoragePath="Photos\Fan Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="2add55df4e9d4b8bb279d68b2f2c86a3" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Meng Zhu.jpg" StoragePath="Photos\Meng Zhu.jpg" />
+					<FileReference Bindings=".jpg" Id="fa88fe4dc974942a071210e93e878db" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Runtao Wang.jpg" StoragePath="Photos\Runtao Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="cfe64caf479849a9be73e9b26207e25e" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Ruocheng Ren.jpg" StoragePath="Photos\Ruocheng Ren.jpg" />
+					<FileReference Bindings=".jpg" Id="3eb07b35db524ee9be3b1c7edf588060" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Sha Wang.jpg" StoragePath="Photos\Sha Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="c9aede2a94d141498bf2ac68b7e9b6b8" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Shuo Chen.jpg" StoragePath="Photos\Shuo Chen.jpg" />
+					<FileReference Bindings=".jpg" Id="a2e35940e1a74e8ab42e3fe9e0d02407" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Tianjiao Gao.jpg" StoragePath="Photos\Tianjiao Gao.jpg" />
+					<FileReference Bindings=".jpg" Id="35255d8e6fb147799599fb2020797bcb" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Tingting Wang.jpg" StoragePath="Photos\Tingting Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="710dcea7c6f448f48e2ba97a58c707d6" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Xian Fu.jpg" StoragePath="Photos\Xian Fu.jpg" />
+					<FileReference Bindings=".jpg" Id="5f826175824c4c14b9c81f0de739c23b" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yang Chen.jpg" StoragePath="Photos\Yang Chen.jpg" />
+					<FileReference Bindings=".jpg" Id="34c46ba6c94c40d3a8ed5726f586656a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yiwen Sun.jpg" StoragePath="Photos\Yiwen Sun.jpg" />
+					<FileReference Bindings=".jpg" Id="2d7b5e29620c4ea986c601a01fcbc07c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yu Wang.jpg" StoragePath="Photos\Yu Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="378f8fdecd4e4e80bd71ed581fee6668" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yuanyuan Wang.jpg" StoragePath="Photos\Yuanyuan Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="3ee26862bd6249bd9b7bfbb5b067acd7" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhengwu Chen.jpg" StoragePath="Photos\Zhengwu Chen.jpg" />
 				</NameScopingEnvoy>
-				<EmbeddedDefinitionReference Id="f6793b30d008489587c1626b476c778a" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="nameList.txt">
-					<ExternalFile>
-						<p.StoragePath>nameList.txt</p.StoragePath>
-					</ExternalFile>
-				</EmbeddedDefinitionReference>
+				<FileReference Bindings=".txt" Id="f6793b30d008489587c1626b476c778a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="nameList.txt" StoragePath="nameList.txt" />
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="9aae763413fd49a9b30d99ac58815e32" Name="css">
-					<EmbeddedDefinitionReference Id="9c894dbc17a47d3a5900ffe77f66240" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="mystyle.css">
-						<ExternalFile>
-							<p.StoragePath>"css\\mystyle.css"</p.StoragePath>
-						</ExternalFile>
-					</EmbeddedDefinitionReference>
+					<FileReference Bindings=".css" Id="9c894dbc17a47d3a5900ffe77f66240" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="mystyle.css" StoragePath="css\mystyle.css" />
 				</NameScopingEnvoy>
 				<SourceFileReference Id="7d93a05e69d4667af0087c36a4f1e79" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="tag.gviweb" />
 				<SourceFileReference Id="1704581157874ee080d11f2d99386417" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
