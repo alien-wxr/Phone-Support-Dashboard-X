@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E4C3CFBC830D302D8B2F2BAB618BE09C65D9A3AC9B2398767E5F4B08EF98C137D0C46B1877B95C57E314F18FF407D265EF5AA34FE6EB7937473465C69388E7F7" Timestamp="1D5984B344B2715" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4BCE32CD27BB32A9974CFAA4A354103C0FF34CB548478C596EA1F0A0AA8C2CE1B42B51E21F30DFEDAA8E1C4B9153CAADC9D5C864C7F6946759D96BE565643312" Timestamp="1D59854532D9DC9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -97,7 +97,7 @@
 			</MethodCall>
 			<Literal Bounds="165 85 125 15" DataType="String" Id="9adb1f80f3174efa85a9f16c14df2d93" Label="4a4d007bf69f46e488b2270e559f874d" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>http://sh-ae-board</p.Data>
-				<StringBehavior TextDisplayMode="Default" />
+				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="dfcb8c58b5b74525906aa0da20ec7422" Joints="N(9adb1f80f3174efa85a9f16c14df2d93:Out)|(290,90) h(10) v(15) N(461b761dad2a4a7da19caac0f9a54cd0:L0)|(315,105)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="235 110 55 15" DataType="String" Id="478606ecc5cf4379bb0c2f7691ef99f1" Label="570a3fc4856d492b8bffd8ddce005b35" xmlns="http://www.ni.com/MocCommon">
@@ -214,10 +214,10 @@
 				<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="85c332cda7a24c2db439334880d28e8c" Joints="N(d1ff63e6df7148fbba4ff83884f3ca18:Out)|(365,70) h(10) v(60) N(ac28fd1bb39e42f1b358a6cb7e9e797e:L0)|(395,130)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="815 55 40 15" DataItem="330be15b7f4a40429ede3be1b335bb8a" Id="9e1c53424d9c47778b7e4b702bb14781" Label="1f70c0a6d4164ef583017bba6d9d5d7a" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="835 55 40 15" DataItem="330be15b7f4a40429ede3be1b335bb8a" Id="9e1c53424d9c47778b7e4b702bb14781" Label="1f70c0a6d4164ef583017bba6d9d5d7a" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<Wire Id="23a760aed3d14389b384c57cc46727c7" Joints="N(9a962dda5684d878c590abeba213b53:R3)|(795,60) N(9e1c53424d9c47778b7e4b702bb14781:Value)|(818,60)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="23a760aed3d14389b384c57cc46727c7" Joints="N(9a962dda5684d878c590abeba213b53:R3)|(795,60) N(9e1c53424d9c47778b7e4b702bb14781:Value)|(838,60)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="310 140 55 15" DataType="@861632c98e64440bafc858537565e870" Id="605ab419156f447e8d9ef5c0097f5d40" Label="f1138f6ca44b4015a237c0b6115a9860" p4:ControlDefinitionChecksum="mSx/+JuZEjrfDiAfOWsRbdKYxkNTA15ogBk3Ma5KU9U=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>1</p.Data>
 				<p4:p.TypeDefinitionTargets>
@@ -241,7 +241,7 @@
 			<NodeLabel AttachedTo="d1ff63e6df7148fbba4ff83884f3ca18" Bounds="155 65 30 15" Id="1535c94576c4b8b8e8562909430d657" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>path</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="9e1c53424d9c47778b7e4b702bb14781" Bounds="860 55 50 14" Id="1f70c0a6d4164ef583017bba6d9d5d7a" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="9e1c53424d9c47778b7e4b702bb14781" Bounds="880 55 50 14" Id="1f70c0a6d4164ef583017bba6d9d5d7a" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error out</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="605ab419156f447e8d9ef5c0097f5d40" Bounds="310 122 30 15" Id="f1138f6ca44b4015a237c0b6115a9860" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
