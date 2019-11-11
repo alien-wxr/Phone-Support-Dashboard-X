@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="332D8628E3C83A3A9DD6E98D9E949FFEC548A70C870992DEE06D4926D271B7765BACBF8DC83A424AC542B4D64EF0ECDF9A5AF59AF971FB7E59F459662EA08767" Timestamp="1D593CE4AA7D89B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1E946642FD39D1C3DC78929AB2371FC30309A95BA1A386E552E0EFB11F9675A129264C2462F8AE80903FBC98C8A3772092FBFF21910416896619B479CB6F9AF5" Timestamp="1D598367ACCBCB5" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Native target compiler" Name="http://www.ni.com/LabVIEW.NativeBackEndCompiler" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
@@ -16,7 +16,6 @@
 		<ComponentConfiguration ComponentSubtypeIdentifier="Application" Id="80fc0016a1474ceea4d4e8bca3feefa2" Name="Configuration1">
 			<CompilerSymbolTable Id="17e0c1f41d494a63b196ee7790c41f82" xmlns="http://www.ni.com/PlatformFramework" />
 			<NativeApplicationOutputTypeProperties Id="23076252ca6741b08c59f5f0a2ca75cc" xmlns="http://www.ni.com/LabVIEW.NativeBackEndCompiler" />
-			<ComponentItemProperties AssociatedEnvoyId="f485aa82e18f4219903c575cfc24411d" Id="f6be227d79ce482e8c88fe43579b2e90" TopLevel="True" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="77a65bfdbf194b468759beec7c9b888b" xmlns="http://www.ni.com/PlatformFramework">
@@ -24,7 +23,10 @@
 		<EmbeddedDefinitionReference Id="9ac638e6fb814eefa62808fb5dfac1a0" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
 			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13f5214778a8491e9c46f3382b2e2f4a" Name="desktop">
-				<SourceFileReference Id="f485aa82e18f4219903c575cfc24411d" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
+				<SourceFileReference Id="88498e9ba5a8432ebad0082a9cbbfd7a" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="python.gvi" StoragePath="python.gvi" />
+				<SourceFileReference Id="b418051605a44e459dfc10f57248c964" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="text.gvi" StoragePath="text.gvi" />
+				<SourceFileReference Id="7cf1e1e71dcb4d0aa390d97ae836d954" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
+				<SourceFileReference Id="fe8c2a1618774cffb53ba8227e714bcf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="main.gvi" StoragePath="main.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="55fe94e94df847a987ceb01878687f39" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="desktop.gcomp" NameTracksFileName="True">
