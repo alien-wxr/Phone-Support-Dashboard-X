@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="01B29AE3E40D4A140607184B17F1D0D811C2DABE7A54D10229101AAFC4D6E6881F12048DC7EF3DCBA6CF630F1B735959E852C18C5088DBD1D88AC055DCF27F96" Timestamp="1D5925CB6D6350F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F64DB410A723EE5261A3179291DA928124243C12172D9C1B1B4D3316EEEFD2A3B5815992E8FCC4FBB1876F5CB3E87858679EADD64D34365E4398CA5F5FE1BC49" Timestamp="1D5950D4271259E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -32,14 +32,21 @@
 			<ConnectorPaneTerminal Hotspot="15 40" />
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
-		<DiagramUnplacedItems Id="b23e4cef7d6b46e58b11fa11bb1aa05c" xmlns="http://www.ni.com/MocCommon" />
+		<DiagramUnplacedItems Id="b23e4cef7d6b46e58b11fa11bb1aa05c" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="0 0 40 15" DataItem="52613eba68134ccbaf64323ca1bf2644" Id="18a269bfb1d1465996f4ddc8831ca491" Label="4a6d1d5d767f49418098653e7f80f535">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="18a269bfb1d1465996f4ddc8831ca491" Bounds="45 0 30 15" Id="4a6d1d5d767f49418098653e7f80f535" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>URL Image</p.Text>
+			</NodeLabel>
+		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="ab6e52c68cca49639db61589e301b788" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="a0403c44b5a34ff9aafae85a3f06bb83">
-			<Literal Bounds="560 615 130 15" DataType="String" Id="99e6906bc305412fa766b67f5edcbe7c" Label="c66b2e7ccd664d9286849ed96031df2f" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>Photos/Yi%20Xu.jpg</p.Data>
+			<Literal Bounds="530 615 160 15" DataType="String" Id="99e6906bc305412fa766b67f5edcbe7c" Label="c66b2e7ccd664d9286849ed96031df2f" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>Photos/Sha%20Wang.jpg</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="99e6906bc305412fa766b67f5edcbe7c" Bounds="560 597 30 15" Id="c66b2e7ccd664d9286849ed96031df2f" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="99e6906bc305412fa766b67f5edcbe7c" Bounds="530 597 30 15" Id="c66b2e7ccd664d9286849ed96031df2f" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Photo1</p.Text>
 			</NodeLabel>
 			<Literal Bounds="650 595 40 15" DataType="Double" Id="3a7d112622704281953a4556239c2fe2" Label="cc2cd5508ea245b09ab94a82f7e7dcff" xmlns="http://www.ni.com/MocCommon">
@@ -191,7 +198,9 @@
 					<HtmlBehavior ClassAttributes="AE-Photo" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlUrlImage>
 				<Label Height="[float]16" Id="488852113d65407cbeb28075b33cc9a9" LabelOwner="[UIModel]33b0a106328b4b2c987229fda026da52" Left="[float]55" Text="[string]Radial Progress Bar" Top="[float]46" Visible="[bool]False" Width="[float]102" />
-				<LVRadialProgressBar BaseName="[string]Radial Progress Bar" Height="[float]250" Id="33b0a106328b4b2c987229fda026da52" Label="[UIModel]488852113d65407cbeb28075b33cc9a9" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LVRadialProgressBar BaseName="[string]Radial Progress Bar" Height="[float]250" Id="33b0a106328b4b2c987229fda026da52" Label="[UIModel]488852113d65407cbeb28075b33cc9a9" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<HtmlBehavior ClassAttributes="yellowBar" xmlns="http://www.ni.com/PlatformFramework" />
+				</LVRadialProgressBar>
 				<HtmlBehavior ClassAttributes="card" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ElementAttributes>
 						<Attribute Name="background" Value="./Resources/CradBG.png" />
@@ -221,7 +230,9 @@
 					<HtmlBehavior ClassAttributes="AE-Photo" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlUrlImage>
 				<Label Height="[float]16" Id="c52bb2b827334bf2af372231b60ba271" LabelOwner="[UIModel]7bf3ce89002248dbb6653600ee1f4d28" Left="[float]55" Text="[string]Radial Progress Bar" Top="[float]46" Visible="[bool]False" Width="[float]102" />
-				<LVRadialProgressBar BaseName="[string]Radial Progress Bar" Height="[float]250" Id="7bf3ce89002248dbb6653600ee1f4d28" Label="[UIModel]c52bb2b827334bf2af372231b60ba271" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LVRadialProgressBar BaseName="[string]Radial Progress Bar" Height="[float]250" Id="7bf3ce89002248dbb6653600ee1f4d28" Label="[UIModel]c52bb2b827334bf2af372231b60ba271" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<HtmlBehavior ClassAttributes="greenBar" xmlns="http://www.ni.com/PlatformFramework" />
+				</LVRadialProgressBar>
 				<HtmlBehavior ClassAttributes="card" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ElementAttributes>
 						<Attribute Name="background" Value="./Resources/CradBG.png" />
@@ -342,7 +353,7 @@
 				</HtmlUrlImage>
 				<Label Height="[float]16" Id="f8d9fc51509f46e2865d257d8a677c07" LabelOwner="[UIModel]3bd8c98705ef4beebabacade4ca901ac" Left="[float]55" Text="[string]Radial Progress Bar" Top="[float]46" Visible="[bool]False" Width="[float]102" />
 				<LVRadialProgressBar BaseName="[string]Radial Progress Bar" Height="[float]250" Id="3bd8c98705ef4beebabacade4ca901ac" Label="[UIModel]f8d9fc51509f46e2865d257d8a677c07" Left="[float]55" Maximum="[double]100" MinHeight="[float]40" MinWidth="[float]40" Minimum="[double]0" TabIndex="[int]2" Top="[float]66" Value="{ClusterBinding FieldName=Radial\ Progress\ Bar}" Width="[float]250" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-					<HtmlBehavior ClassAttributes="" xmlns="http://www.ni.com/PlatformFramework" />
+					<HtmlBehavior ClassAttributes="redBar" xmlns="http://www.ni.com/PlatformFramework" />
 				</LVRadialProgressBar>
 				<HtmlBehavior ClassAttributes="card" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ElementAttributes>
@@ -390,6 +401,10 @@
 				</StringControl>
 				<Label Height="[float]16" Id="e7f8d3c3afb64326bf680dc37f1b6722" LabelOwner="[UIModel]60c9be2a4ea34358a38a7a9f850bad51" Left="[float]25" Text="[string]FullName" Top="[float]-14" Visible="[bool]False" Width="[float]51" />
 			</Cluster>
+			<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Height="[float]200" Id="cf9fb135b02a41468ef4595f8c14ebe1" Label="[UIModel]7ebd4e6521af40a785a202c9d2bb0fe1" Left="[float]340" Source="{DataItemBinding Id=52613eba68134ccbaf64323ca1bf2644}" Stretch="[SMStretch]Uniform" TabIndex="[int]8" Top="[float]932" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<HtmlBehavior ClassAttributes="AE-Photo" xmlns="http://www.ni.com/PlatformFramework" />
+			</HtmlUrlImage>
+			<Label Height="[float]0" Id="7ebd4e6521af40a785a202c9d2bb0fe1" LabelOwner="[UIModel]cf9fb135b02a41468ef4595f8c14ebe1" Left="[float]340" Text="[string]URL Image" Top="[float]912" Visible="[bool]False" Width="[float]0" xmlns="http://www.ni.com/PanelCommon" />
 		</HtmlFrontPanel>
 		<DataItem DataType="@f360ee2e42914e6fa23a3058c02674ef" Id="d7841d23c2b748708e8392241794404c" Name="Card_1" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -486,6 +501,9 @@
 					<Field6>""</Field6>
 				</Cluster>
 			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="52613eba68134ccbaf64323ca1bf2644" Name="URL Image" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>Photos/Ayden%20Foo.jpg</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
