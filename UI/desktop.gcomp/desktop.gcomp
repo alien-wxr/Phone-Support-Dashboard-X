@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1E946642FD39D1C3DC78929AB2371FC30309A95BA1A386E552E0EFB11F9675A129264C2462F8AE80903FBC98C8A3772092FBFF21910416896619B479CB6F9AF5" Timestamp="1D598367ACCBCB5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5E1C7F26B3295E157738C3100F9C02056A210B36142B139408A964528A1C61188D6A6607761FBBB0EC7AA84BC4C36C8A24520BC032BE1A0D64EEB52173C4F56E" Timestamp="1D598545274157D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Native target compiler" Name="http://www.ni.com/LabVIEW.NativeBackEndCompiler" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
@@ -27,6 +27,8 @@
 				<SourceFileReference Id="b418051605a44e459dfc10f57248c964" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="text.gvi" StoragePath="text.gvi" />
 				<SourceFileReference Id="7cf1e1e71dcb4d0aa390d97ae836d954" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
 				<SourceFileReference Id="fe8c2a1618774cffb53ba8227e714bcf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="main.gvi" StoragePath="main.gvi" />
+				<SourceFileReference Id="53a37ba217954d5b808aa8beecac5a82" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="createBasicTag.gvi" StoragePath="createBasicTag.gvi" />
+				<SourceFileReference Id="e35597b5df9c4549b840fa65a845e8af" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="writeBasicTag.gvi" StoragePath="writeBasicTag.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="55fe94e94df847a987ceb01878687f39" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="desktop.gcomp" NameTracksFileName="True">
