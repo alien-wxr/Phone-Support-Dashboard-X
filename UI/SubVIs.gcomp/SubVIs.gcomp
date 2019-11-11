@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="5C9531E4FCD94FD42E733105448E29404A129A479F07B07BC69A225AA96F1217C88A9145D7C5841849B4852FE41479AD7A07F7A1050297EEE6FF8CC03C438319" Timestamp="1D598717704D36F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="b4ec6ca6f5c942ae92d1ee0e7992e1c4" RootNamespaceId="11a942c1c11f4e67a382343698794968" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="4b35865d7c124a4cb1f4959499411206" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="dbe3c52c85547b09165b25fe244e627" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="bf0a26aabf084f179f616aae732b7ea4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="4acbf5fd74c84bc7a81c5d5fce389e16" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="e64e66a11f542f4a747a03d4f2e459e" Name="Configuration1">
+			<CompilerSymbolTable Id="596333a21d9f4f199febbf85e2b6b0ab" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="951c3eac08204cdb999dbf5c6f231712" Exported="True" Id="a17a6ca0f32d40d087cf830cffc23577" />
+			<ComponentItemProperties AssociatedEnvoyId="cc854c0b4fdc4be4b61d2b5870cca738" Exported="True" Id="f79cfd4005344bd09e9ac9a2b17d6c62" />
+			<ComponentItemProperties AssociatedEnvoyId="c69525c9c43244f89feffc0df4171ca8" Exported="True" Id="e4d231973e64ca5ababebeeeb118ac6" />
+			<ComponentItemProperties AssociatedEnvoyId="51f7e97744a144e18a30fc45636b61cf" Exported="True" Id="ac8e59ac8b80492aba24eafee233f561" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="77f8b1b2e14a4754aa21a5a9d0adf5f8" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="208954143c84a9fb9d232d4613e65d5" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="c50a60f6e96241d49c9fd22d08abe505" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="11a942c1c11f4e67a382343698794968" Name="SubVIs">
+				<SourceFileReference Id="951c3eac08204cdb999dbf5c6f231712" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="writeBasicTag.gvi" StoragePath="writeBasicTag.gvi" />
+				<SourceFileReference Id="cc854c0b4fdc4be4b61d2b5870cca738" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="createBasicTag.gvi" StoragePath="createBasicTag.gvi" />
+				<SourceFileReference Id="c69525c9c43244f89feffc0df4171ca8" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="readBasicTag.gvi" StoragePath="readBasicTag.gvi" />
+				<SourceFileReference Id="51f7e97744a144e18a30fc45636b61cf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DateAndTime.gvi" StoragePath="DateAndTime.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="cc3a99a4254447f997f352d9d8883faa" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="SubVIs.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="e64e66a11f542f4a747a03d4f2e459e" Id="dea2f54254e5444da207310dc2a6f52b" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
