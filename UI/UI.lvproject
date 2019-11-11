@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="202084D40F1C3C887155AA4A8ABE739F26D6BDB6203A0B15E5014CFD5F00EBC867415A52DB4845C0C9E1F50DFED2265050F19CDAAAB9BBCCB12E68A0B94AC33F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="53E177A10D448493FA141B99B057BC324585A1199E65ADCA7E22D2500AAE790F0CAF2B4DFE62FB436812AAD3B1A59C0C182A65375686021F1D268612F01B3229" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Builders/SystemDesigner" Name="http://www.ni.com/Builders/SystemDesigner/SystemModel" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Data" Name="http://www.ni.com/Data" OldestCompatibleVersion="6.2.0.0" Version="6.2.0.49152" />
@@ -42,25 +42,36 @@
 						<Instance Id="738ef64825ed432cb14ea3c1d74938d4" Source="{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent">
 							<Symbols p8:Path="[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent]Process.ApplicationComponent" p9:ShowInDiagram="True" p10:Process.AliasName="desktop.gcomp" p10:Process.AssociatedIdentifier="d8dbd6c4389540a9b05c30678ef1fc8b" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="276b7a96a1794b328f68862d4152edf1" Source="{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent">
+							<Symbols p8:Path="[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent" p9:ShowInDiagram="True" p10:Process.AliasName="SubVIs.gcomp" p10:Process.AssociatedIdentifier="d920e85c42224da289cb4ba9a0442e81" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/MetaDiagram" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Instance Id="63a46524b1c44e89a2225b9db4a3ecd8" Source="{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent">
+							<Symbols p8:Path="[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent" p9:Process.AliasName="SubVIs.gcomp" p9:Process.AssociatedIdentifier="8eabe43102724000bbd2f45983e257ae" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="19c810479094431b97d52d0e2f0d1649" Name="Root Superimposition">
 							<Superimpose Source="8c9e82dc3f9c4704bbc06d3f9b0eccbc" />
 							<Superimpose Source="50f511b6112b4e0e9d056582920cae2f">
 								<Superimpose Parent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="80d2eda2da8647fc941076f9f259382f" />
+								<Superimpose Parent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule/VireoTarget" Source="276b7a96a1794b328f68862d4152edf1" />
 							</Superimpose>
 							<Superimpose Source="5e90b698d15540da8fc9ae1e23e984d6">
 								<Superimpose Parent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector" Source="43c91089cf334d87a945efe189340f01" />
 								<Superimpose Parent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}SerialConnector]SerialConnector" Source="2295b0aeb482487d8221502349105a88" />
 								<Superimpose Parent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="738ef64825ed432cb14ea3c1d74938d4" />
+								<Superimpose Parent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="63a46524b1c44e89a2225b9db4a3ecd8" />
 							</Superimpose>
 						</Superimposition>
 					</MappingManager>
 				</EnvoySuperimpositionContainer>
 				<SystemDiagramRootDiagram Id="eceee108896e42a39f062439c3961f21">
-					<SystemHardware Bounds="140 120 315 190" Facade="PartsView" HasLayoutManager="True" Id="d358ec1d671247d18a7ff3902d7a9b6e" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice">
-						<SystemHardwareGroupDiagram Bounds="0 65 315 110" Id="d9ed4960384f48739e34c436a7833b00">
-							<SystemHardware Bounds="2 0 311 110" Facade="PartsView" Id="5c4e98f369d84c9c93edb534bff86cf7" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule">
-								<SystemHardwareGroupDiagram Bounds="0 35 311 62" GroupName="Software" GroupUniqueId="Software" Id="18e47909e08c48ad842454653920ff84">
+					<SystemHardware Bounds="140 120 315 215" Facade="PartsView" HasLayoutManager="True" Id="d358ec1d671247d18a7ff3902d7a9b6e" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice">
+						<SystemHardwareGroupDiagram Bounds="0 65 315 135" Id="d9ed4960384f48739e34c436a7833b00">
+							<SystemHardware Bounds="2 0 311 135" Facade="PartsView" Id="5c4e98f369d84c9c93edb534bff86cf7" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/50f511b6112b4e0e9d056582920cae2f}[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoDevice]VireoDevice/[{http://www.ni.com/SystemDesigner/VireoBrowser/SystemModel}VireoModule]VireoModule">
+								<SystemHardwareGroupDiagram Bounds="0 35 311 87" GroupName="Software" GroupUniqueId="Software" Id="18e47909e08c48ad842454653920ff84">
 									<SystemHardware Bounds="5 15 301 25" Facade="PartsViewLeaf" Id="df1a7b00ca254478814ca16da86a03ed" MainLabel="$aliasName" SystemModelContent="{:/80d2eda2da8647fc941076f9f259382f}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent]Process.ApplicationComponent">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 40 301 25" Facade="PartsViewLeaf" Id="7da671c66724739b954d43695c1ad4e" MainLabel="$aliasName" SystemModelContent="{:/276b7a96a1794b328f68862d4152edf1}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent">
 										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 									</SystemHardware>
 								</SystemHardwareGroupDiagram>
@@ -70,9 +81,9 @@
 						<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 						<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
 					</SystemHardware>
-					<SystemHardware Bounds="140 335 315 295" Facade="PartsView" HasLayoutManager="True" Id="2c0f5897d49249d6beb7027e60f5e2c2" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop">
-						<SystemHardwareGroupDiagram Bounds="0 65 315 215" Id="30cc5b472b345549359b8daa0e74386">
-							<SystemHardware Bounds="2 0 311 190" Facade="PartsView" Id="69db094b8e054758a42fc665cc24139d" MainLabel="$aliasName" SystemModelContent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost">
+					<SystemHardware Bounds="140 335 315 320" Facade="PartsView" HasLayoutManager="True" Id="2c0f5897d49249d6beb7027e60f5e2c2" MainLabel="$aliasName" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop">
+						<SystemHardwareGroupDiagram Bounds="0 65 315 240" Id="30cc5b472b345549359b8daa0e74386">
+							<SystemHardware Bounds="2 0 311 215" Facade="PartsView" Id="69db094b8e054758a42fc665cc24139d" MainLabel="$aliasName" SystemModelContent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost">
 								<SystemHardwareGroupDiagram Bounds="0 0 311 115" GroupName="Ports" GroupUniqueId="Ports" Id="a7209a79ca4f478db0cf75a6391c06c4">
 									<SystemHardware Bounds="5 15 301 25" Facade="PartsViewLeaf" Id="7172a24f123e4310977cc4b746661f83" MainLabel="$aliasName" SystemModelContent="{:/5e90b698d15540da8fc9ae1e23e984d6}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector">
 										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
@@ -87,8 +98,11 @@
 										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 									</SystemHardware>
 								</SystemHardwareGroupDiagram>
-								<SystemHardwareGroupDiagram Bounds="0 115 311 62" GroupName="Software" GroupUniqueId="Software" Id="f8d5f673380e44be9606fef130446e2e">
+								<SystemHardwareGroupDiagram Bounds="0 115 311 87" GroupName="Software" GroupUniqueId="Software" Id="f8d5f673380e44be9606fef130446e2e">
 									<SystemHardware Bounds="5 15 301 25" Facade="PartsViewLeaf" Id="d94a395cc7f4401abca2e6301a1ca871" MainLabel="$aliasName" SystemModelContent="{:/738ef64825ed432cb14ea3c1d74938d4}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent]Process.ApplicationComponent">
+										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
+									</SystemHardware>
+									<SystemHardware Bounds="5 40 301 25" Facade="PartsViewLeaf" Id="24b4e872e4594d43a467e8eed1bc8268" MainLabel="$aliasName" SystemModelContent="{:/63a46524b1c44e89a2225b9db4a3ecd8}[{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent]Process.LibraryComponent">
 										<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 									</SystemHardware>
 								</SystemHardwareGroupDiagram>
@@ -211,6 +225,7 @@
 						<WeakDefaultComponentConfigurationReference Id="fe067e9faa8e41068bf0c3f635c8ce58" PackageName="ni-systemlink-assetmanagement-src-19.5.0.niaddon" Target="NI.SL.AssetManagement.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="92e543019ad8468ab1a888042781ed3a" PackageName="ni-visa-base-src-19.5.0.niaddon" Target="VISA.gcomp" />
 						<ComponentConfigurationReferenceDependencySource Id="e3a44442921247a39f4af2d23b2ddbdf" Target="desktop.gcomp::Configuration1" />
+						<ComponentConfigurationReferenceDependencySource Id="55d0786d7ba04e92bf69ade0eea72bac" Target="SubVIs.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="6278d1f1a43f4212bbfe06aad2fea5af" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -259,6 +274,7 @@
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
 					</EmbeddedDefinitionReference>
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="98fcfc0a2e964e82858427db1a9e082b" ModelDefinitionType="ComponentDefinition" Name="desktop.gcomp" StoragePath="desktop.gcomp\desktop.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="901ad6aeae854c32996b284a73cea37c" ModelDefinitionType="ComponentDefinition" Name="SubVIs.gcomp" StoragePath="SubVIs.gcomp\SubVIs.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="8831a0e68f1f457db82a3b87debe5a50" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
@@ -377,6 +393,7 @@
 						<WeakDefaultComponentConfigurationReference Id="9706b129fe47491890eb1a57ad3d3113" PackageName="ni-skyline-utilities-src-19.5.0.niaddon" Target="NI.SL.Utilities.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="df05aef7cc6646699641076e4b61e9ed" PackageName="ni-systemlink-assetmanagement-src-19.5.0.niaddon" Target="NI.SL.AssetManagement.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="caf8ff0bef40608b6646cad7526bce" PackageName="ni-visa-base-src-19.5.0.niaddon" Target="VISA.gcomp" />
+						<ComponentConfigurationReferenceDependencySource Id="f02621be12084eff894d65e1dec7e44c" Target="SubVIs.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="f23ae6500cdf4fe4a937e79d649ab9c5" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -424,6 +441,7 @@
 					<EmbeddedDefinitionReference Id="3ab7d30226834a64a5e840f035b10abe" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Fpga" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
 					</EmbeddedDefinitionReference>
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="d920e85c42224da289cb4ba9a0442e81" ModelDefinitionType="ComponentDefinition" Name="SubVIs.gcomp" StoragePath="SubVIs.gcomp\SubVIs.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="d871437de8314b9bb64706e9fd9afe30" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
@@ -542,6 +560,7 @@
 						<WeakDefaultComponentConfigurationReference Id="a89b9988ba5a4f8abcbbdb201797d8b3" PackageName="ni-systemlink-assetmanagement-src-19.5.0.niaddon" Target="NI.SL.AssetManagement.gcomp" />
 						<WeakDefaultComponentConfigurationReference Id="ed7a187da1d644bd9a9700eb0658a616" PackageName="ni-visa-base-src-19.5.0.niaddon" Target="VISA.gcomp" />
 						<ComponentConfigurationReferenceDependencySource Id="549880fab83d4b9cbae10362962c070f" Target="desktop.gcomp::Configuration1" />
+						<ComponentConfigurationReferenceDependencySource Id="9c948d1e1d14fcda28422f9c2c8aee5" Target="SubVIs.gcomp::Configuration1" />
 					</BuildSpecificationDefinition>
 					<EmbeddedDefinitionReference Id="a34eb688b7124dc7b627b96b59a5f381" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 						<PackageReferencesDefinition />
@@ -589,6 +608,7 @@
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
 					</EmbeddedDefinitionReference>
 					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Application,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.ApplicationComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="d8dbd6c4389540a9b05c30678ef1fc8b" ModelDefinitionType="ComponentDefinition" Name="desktop.gcomp" StoragePath="desktop.gcomp\desktop.gcomp" />
+					<SourceFileReference Bindings="EnvoyManager,ComponentMoC,{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library,ContentKind_{http://www.ni.com/Builders/SystemDesigner/SystemModel}Process.LibraryComponent,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="8eabe43102724000bbd2f45983e257ae" ModelDefinitionType="ComponentDefinition" Name="SubVIs.gcomp" StoragePath="SubVIs.gcomp\SubVIs.gcomp" />
 				</NameScopingEnvoy>
 				<EmbeddedDefinitionReference Id="753d8f636a6940068ac2254d8a31ec98" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />

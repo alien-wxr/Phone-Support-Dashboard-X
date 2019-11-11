@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="32BA264C34E694C14E5FBB77CE032B3803EC82DB3C59C9A321EDBD543BDA71D86E2EBAB0068905A17A5519DFA71AD0DB6DCBDC283DC56BB7906FC059C637CD62" Timestamp="1D598340A250F16" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A22E629D20A4AA46C3CF0DA901F0B05AE0242F089793F3ADA7384A9B8AAA629CD700E2BCAE3EFA827032DCC8F464753FE698C40C5DDA2769FD5F3831B84B33F3" Timestamp="1D5986ED11F5039" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -53,7 +53,6 @@
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="a7dd51552c4001ba0a7aecc0e5fa9c" Id="2ee56d78f2d2470286da539754bf8056" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="ffe1f0561b5a48259a21cde48de6f9d7" Id="6b87361ae64642358be92bb79a5f4629" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5b8f89992f7940609527d40b7beb4340" Id="e48b011d7b824ab3b78ddceec003cdf2" />
-			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2ca22446709242d1a3d338ea1987b977" Id="8270f9e1d19146dd8cfa78fc75881342" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="94f6b3f2ae1b4523ad0dd29cdea87eef" Id="385a32487af142f481d43bb78a72cc33" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="7050ba6c50324f6385a5e5e7f47a9f7c" Id="ad568e599abf4cacb866b0e50cae9432" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2add55df4e9d4b8bb279d68b2f2c86a3" Id="b69081c8234449f59723dad72d2f51a5" />
@@ -69,6 +68,15 @@
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2d7b5e29620c4ea986c601a01fcbc07c" Id="28c784e0353941d2a023714935f76df0" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="378f8fdecd4e4e80bd71ed581fee6668" Id="f61040f5adb94dd8a1b51a54adfb0649" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="3ee26862bd6249bd9b7bfbb5b067acd7" Id="c729112fe21249ca93ef913b1dc9f209" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="71982478eb304b43a0e6f26456719e02" Id="53740a44feba4c3893794093f7e51c67" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="89e9ef84d7ea4a2bb9e7486a5e16ab9b" Id="e11b077a3b694a77861b7a144d6e97d1" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="c1ea1598fefa46aba8eeaa0243d393de" Id="b26eec3d35c341998a6e1cc5c90407b9" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5b396d5e518c4490ae045a657d2b00f8" Id="49f1f01e45c40c48bb5e1da0d8a0344" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="90b2a1dcdda442a58b44d1c231fdedd8" Id="1ea41573d2b54280abf8f813a30715e0" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="5cff9e8049994329ad1c2164e6d54dc3" Id="165b7779dda1438da551ef28e854f66a" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="158e9ab7f7d44c388aecc46796724cfb" Id="ff941ecb73fb431fb48e0f9e4871b6d3" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="24372469ead4a8b8946895b1285ceee" Id="bb6fce8482434ad5b9b567b5b63f46d2" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="2cee779f47e2446fa19481b37cd4cf52" Id="4b9e238750724a3cbc9c8a4af6d474a6" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="9098475126c445c28074481dca8e727f" xmlns="http://www.ni.com/PlatformFramework">
@@ -82,7 +90,15 @@
 					<FileReference Bindings=".png" Id="a7dd51552c4001ba0a7aecc0e5fa9c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="CardBG.png" StoragePath="Resources\CardBG.png" />
 					<FileReference Bindings=".png" Id="ffe1f0561b5a48259a21cde48de6f9d7" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="greenCircle.png" StoragePath="Resources\greenCircle.png" />
 					<FileReference Bindings=".png" Id="5b8f89992f7940609527d40b7beb4340" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="redCircle.png" StoragePath="Resources\redCircle.png" />
-					<FileReference Bindings=".png" Id="2ca22446709242d1a3d338ea1987b977" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="yellowCircle.png" StoragePath="Resources\yellowCircle.png" />
+					<FileReference Bindings=".png" Id="71982478eb304b43a0e6f26456719e02" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="dockBar.png" StoragePath="Resources\dockBar.png" />
+					<FileReference Bindings=".png" Id="89e9ef84d7ea4a2bb9e7486a5e16ab9b" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="available.png" StoragePath="Resources\available.png" />
+					<FileReference Bindings=".png" Id="c1ea1598fefa46aba8eeaa0243d393de" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="away.png" StoragePath="Resources\away.png" />
+					<FileReference Bindings=".png" Id="5b396d5e518c4490ae045a657d2b00f8" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Menu.png" StoragePath="Resources\Menu.png" />
+					<FileReference Bindings=".png" Id="90b2a1dcdda442a58b44d1c231fdedd8" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Power.png" StoragePath="Resources\Power.png" />
+					<FileReference Bindings=".png" Id="5cff9e8049994329ad1c2164e6d54dc3" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="talking.png" StoragePath="Resources\talking.png" />
+					<FileReference Bindings=".png" Id="158e9ab7f7d44c388aecc46796724cfb" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="talks.png" StoragePath="Resources\talks.png" />
+					<FileReference Bindings=".png" Id="24372469ead4a8b8946895b1285ceee" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="waiting.png" StoragePath="Resources\waiting.png" />
+					<FileReference Bindings=".png" Id="2cee779f47e2446fa19481b37cd4cf52" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="yellowCircle.png" StoragePath="Resources\yellowCircle.png" />
 				</NameScopingEnvoy>
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="282a7b62cdf843649977a10b0c2591e0" Name="Photos">
 					<FileReference Bindings=".jpg" Id="b52ef036365a40479a7397ff7308fb81" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Ayden Foo.jpg" StoragePath="Photos\Ayden Foo.jpg" />
