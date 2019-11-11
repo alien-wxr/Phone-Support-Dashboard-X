@@ -131,11 +131,6 @@ try:
                 for item2 in item:
                     f.write(item2+'\n')
             f.close()
-            for stateDict in stateList:
-                item = stateDict.values()
-                for item2 in item:
-                    print(item2.ljust(20,' '), end='|')
-                print()
 
         #   Code hasn't been run today
         else:
@@ -191,12 +186,6 @@ try:
                 for item2 in item:
                     f.write(item2+'\n')
             f.close()
-            #   for debug
-            for stateDict in stateList:
-                item = stateDict.values()
-                for item2 in item:
-                    print(item2.ljust(20,' '), end='|')
-                print()
     else:
         os.remove("./Data/currentState.txt")
         print('off work')
