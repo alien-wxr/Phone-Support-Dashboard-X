@@ -21,7 +21,7 @@ localtime = time.localtime(time.time())
 
 try:
     #   only run between 9 AM and 6 PM
-    if (localtime[3] >= 9 and localtime[3] <= 18):
+    if (localtime[3] >= 9 and localtime[3] <= 22):
 
         #   Code has been run today
         if (os.path.exists("./Data/currentState.txt")):
