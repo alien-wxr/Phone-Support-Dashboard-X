@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="408D72ECBF4CF470C6A0205EE7B6B8C917E6D55FFC4F1CADA93E23185C4E1F6F8E927A1414310EE5431545F34B89A50DEFB4B10906D1816FF5F3D7E5FB941E8C" Timestamp="1D5987A53C6842E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="78311D65A5FBAFD729B84436E371244E8A4EB9648984DC537740AD416FEC251E8AE3DD5853237A1F809E59A170777AC54D25F292B2252932CA6E0D85723FC905" Timestamp="1D59906F35FBC10" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
@@ -19,6 +19,7 @@
 			<ComponentItemProperties AssociatedEnvoyId="c69525c9c43244f89feffc0df4171ca8" Exported="True" Id="e4d231973e64ca5ababebeeeb118ac6" />
 			<ComponentItemProperties AssociatedEnvoyId="51f7e97744a144e18a30fc45636b61cf" Exported="True" Id="ac8e59ac8b80492aba24eafee233f561" />
 			<ComponentItemProperties AssociatedEnvoyId="d369b0b7cafe4142ae6635afe4461bfe" Exported="True" Id="f713f73202b44bdfaabfed19df062e95" />
+			<ComponentItemProperties AssociatedEnvoyId="61018f04b12f4309abfe3ee1be6d7961" Exported="True" Id="585e5c2f80f0484a96f6acc9609556ad" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="77f8b1b2e14a4754aa21a5a9d0adf5f8" xmlns="http://www.ni.com/PlatformFramework">
@@ -31,6 +32,7 @@
 				<SourceFileReference Id="c69525c9c43244f89feffc0df4171ca8" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="readBasicTag.gvi" StoragePath="readBasicTag.gvi" />
 				<SourceFileReference Id="51f7e97744a144e18a30fc45636b61cf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DateAndTime.gvi" StoragePath="DateAndTime.gvi" />
 				<SourceFileReference Id="d369b0b7cafe4142ae6635afe4461bfe" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="One2Two.gvi" StoragePath="One2Two.gvi" />
+				<SourceFileReference Id="61018f04b12f4309abfe3ee1be6d7961" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="createCardTag.gvi" StoragePath="createCardTag.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="cc3a99a4254447f997f352d9d8883faa" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="SubVIs.gcomp" NameTracksFileName="True">
