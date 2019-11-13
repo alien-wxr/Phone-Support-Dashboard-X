@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="363E4A0D62A5EBA5F7CD2F1FBFF8592E3044D586EB5B550247C2D1E5C2B073366B0CD2168908926D601CDA94A5BAC15AB1B475B7836CEA8CBE332116CA44D47B" Timestamp="1D59914C04CE1D4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6EC7CC50890816718BEEDD615A534B31EE4B483547038073BD1BD34308ECB13E2D356821839C196AC1740F7F99C89D8D6FD6C40A396BFFBB3539DD1D657A88FE" Timestamp="1D599E36DED6944" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -123,8 +123,16 @@
 				<p.Text>PhotoPath</p.Text>
 			</NodeLabel>
 			<Wire Id="6500374c10c04efb903503ddfd46181b" Joints="N(93d56e5e33e641a09d6bb7807a3e3a71:outString)|(570,235) N(a2dbf7510fb645d7ba343fffe66afa3d:Value)|(593,235)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="440 195 25 15" DataType="Boolean" Id="9c02d9b78c3e47d3a8cc52deca7e0dcb" Label="224ee9415874218bf8d79cc03b69419" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<Wire Id="78c8eb66fd3b455f87861c8dda8a19dd" Joints="N(9c02d9b78c3e47d3a8cc52deca7e0dcb:Out)|(465,200) h(5) N(b38ff3e743594672a50613516f75b86f:replace all (F\))|(470,240)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="9c02d9b78c3e47d3a8cc52deca7e0dcb" Bounds="405 195 30 15" Id="224ee9415874218bf8d79cc03b69419" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>replace all</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
-		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="98768bd2411141949e4ff69189462f27" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+		<NativeFrontPanel Background="[SMSolidColorBrush]#ffffffff" Height="[float]1600" HtmlPanel="[bool]False" Id="98768bd2411141949e4ff69189462f27" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="778ea7da05884cf98ec4b9aa77eaab38" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="String" Id="7cf7eb2633be48609881bb5a29a60757" Name="name" xmlns="http://www.ni.com/MocCommon">
