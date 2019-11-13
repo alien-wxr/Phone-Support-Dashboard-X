@@ -21,7 +21,7 @@ localtime = time.localtime(time.time())
 
 try:
     #   only run between 9 AM and 6 PM
-    if (localtime[3] >= 9 and localtime[3] <= 22):
+    if (localtime[3] >= 9 and localtime[3] <= 20):
 
         #   Code has been run today
         if (os.path.exists("./Data/currentState.txt")):
@@ -92,7 +92,7 @@ try:
                     if stateDict['FullName']==oldStateDict['FullName']:
                         flag = False
                         #   Talks Recording
-                        if oldStateDict['CurrentState']=='Free' and stateDict['CurrentState']=='Busy':
+                        if oldStateDict['CurrentState']!='Busy' and stateDict['CurrentState']=='Busy':
                             allTalks = allTalks+1
                             stateDict['Talks'] = str(int(oldStateDict['Talks'])+1)
                         else:
@@ -114,7 +114,7 @@ try:
                     #   Talks Recording
                     if stateDict['AgentState']=='Busy':
                         allTalks += 1
-                        stateDict['Talks'] += 1
+                        stateDict['Talks'] = str(int(stateDict['Talks'])+1)
                     #   Current State Period Calculating
                     stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
             

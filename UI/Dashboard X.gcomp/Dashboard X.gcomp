@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2D7C562EFE114ADE7F350813F617D031ACAD7FFFA254489B639850A50A812300033F145C74BFA9A9E1856178D8B5FE62F0B4659FDA3218B04493288EA91C18B0" Timestamp="1D599F52F88B9E9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B34CEEE16CC8EAD8B0DC8409234B84E0523B55CA0FC9DB162AD966EFCBC7ADFEA1DCF480A211EBE49BFAA5C34C979087D798217E678F154364EFD30C73B15360" Timestamp="1D59A097B7460CF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
 		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="e47cfa74d2bd4ffdbd3109eb09454cbd" RootNamespaceId="dfe6a629190d466e9f953afaa6c5cde2" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="True" Company="NI" DefaultConfigurationName="Configuration1" Id="e47cfa74d2bd4ffdbd3109eb09454cbd" Product="Phone Support Dashboard" RootNamespaceId="dfe6a629190d466e9f953afaa6c5cde2" UserVersion="1.0.2.2" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="8cb1d9d092c5499bbc1897e086ee4bc5" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="60353119098a4c8dbb582412737eac85" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="d553b28350fe421c9149d581637353a3" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
