@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A22E629D20A4AA46C3CF0DA901F0B05AE0242F089793F3ADA7384A9B8AAA629CD700E2BCAE3EFA827032DCC8F464753FE698C40C5DDA2769FD5F3831B84B33F3" Timestamp="1D5986ED11F5039" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="15CBBD2C888B1D56484FD2C693EE1EA32391F536CDEBCB23F9D5562133981107F63FB9E4F55CABF128D4317A32DC1FB62DA105A30FA7B1147CA642121E250104" Timestamp="1D59916D3E113CD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -140,7 +140,7 @@
 					<FileReference Bindings=".jpg" Id="710dcea7c6f448f48e2ba97a58c707d6" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Xian Fu.jpg" StoragePath="Photos\Xian Fu.jpg" />
 					<FileReference Bindings=".jpg" Id="5f826175824c4c14b9c81f0de739c23b" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yang Chen.jpg" StoragePath="Photos\Yang Chen.jpg" />
 					<FileReference Bindings=".jpg" Id="34c46ba6c94c40d3a8ed5726f586656a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yiwen Sun.jpg" StoragePath="Photos\Yiwen Sun.jpg" />
-					<FileReference Bindings=".jpg" Id="2d7b5e29620c4ea986c601a01fcbc07c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yu Wang.jpg" StoragePath="Photos\Yu Wang.jpg" />
+					<FileReference Bindings=".jpg" Id="2d7b5e29620c4ea986c601a01fcbc07c" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yu2 Wang.jpg" StoragePath="Photos\Yu2 Wang.jpg" />
 					<FileReference Bindings=".jpg" Id="378f8fdecd4e4e80bd71ed581fee6668" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Yuanyuan Wang.jpg" StoragePath="Photos\Yuanyuan Wang.jpg" />
 					<FileReference Bindings=".jpg" Id="3ee26862bd6249bd9b7bfbb5b067acd7" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="Zhengwu Chen.jpg" StoragePath="Photos\Zhengwu Chen.jpg" />
 				</NameScopingEnvoy>
