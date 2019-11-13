@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="15CBBD2C888B1D56484FD2C693EE1EA32391F536CDEBCB23F9D5562133981107F63FB9E4F55CABF128D4317A32DC1FB62DA105A30FA7B1147CA642121E250104" Timestamp="1D59916D3E113CD" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2D7C562EFE114ADE7F350813F617D031ACAD7FFFA254489B639850A50A812300033F145C74BFA9A9E1856178D8B5FE62F0B4659FDA3218B04493288EA91C18B0" Timestamp="1D599F52F88B9E9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="6.3.0.49152" Version="6.3.0.49152" />
@@ -148,8 +148,6 @@
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="9aae763413fd49a9b30d99ac58815e32" Name="css">
 					<FileReference Bindings=".css" Id="9c894dbc17a47d3a5900ffe77f66240" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="mystyle.css" StoragePath="css\mystyle.css" />
 				</NameScopingEnvoy>
-				<SourceFileReference Id="7d93a05e69d4667af0087c36a4f1e79" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="tag.gviweb" />
-				<SourceFileReference Id="1704581157874ee080d11f2d99386417" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="tag.gvi" StoragePath="tag.gvi" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="33eb0e6fb86f4bad85d3c863b84d0992" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Dashboard X.gcomp" NameTracksFileName="True">
