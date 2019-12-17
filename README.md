@@ -28,3 +28,5 @@
 ### Bugs to fix
 
 1. The **main.py** cannot handle the situation that **currentState.txt** is damaged, which happens because python crashed when saving **currentState.txt**.
+
+### **To Do** List
