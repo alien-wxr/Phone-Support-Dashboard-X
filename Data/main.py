@@ -207,6 +207,6 @@ try:
         print('off work')
 except:
     f = open("./Data/errorLog.txt","w")
-    f.write("error")
+    f.write(str(currentTime)+": error\n")
     f.close()
     print('error')
