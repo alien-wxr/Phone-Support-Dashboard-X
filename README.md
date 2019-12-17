@@ -7,14 +7,12 @@
 ### 1. DashboardV2
 
 - Provide the basic view
-
 ![V2](/Resources/DashboardV2.png)
 
 ### 2. DashboardV3
 
 - Provide basic program automotion
 - Bug Sweeping
-
 ![V3](/Resources/DashboardV3.png)
 
 ## Current version
