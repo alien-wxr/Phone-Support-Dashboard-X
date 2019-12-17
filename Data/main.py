@@ -132,6 +132,22 @@ try:
                     f.write(item2+'\n')
             f.close()
 
+            #   save dataLog
+            path = "./Data/Log/"+str(currentTime)+".txt"
+            f = open(path,"w")
+            f.write(str(currentTime)+'\n')
+            f.write(str(freeNum)+'\n')
+            f.write(str(busyNum)+'\n')
+            f.write(str(awayNum)+'\n')
+            f.write(str(allTalks)+'\n')
+            f.write(str(waitNum)+'\n')
+            for stateDict in stateList:
+                item = stateDict.values()
+                for item2 in item:
+                    f.write(item2.ljust(17,' ') +'|')
+                f.write("\n")
+            f.close()
+
         #   Code hasn't been run today
         else:
             #   initializing
