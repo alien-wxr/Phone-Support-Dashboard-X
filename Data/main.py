@@ -1,4 +1,4 @@
-##############################################
+##################################################
 #   main.py
 #   Phone-Support-Dashboard-X/Data
 #
@@ -6,10 +6,26 @@
 #       the main.py for the data processing
 #
 #   Created by Xiaorong Wang on 2019/10/11.
-###############################################
+##################################################
 
-
-
+##################################################
+#   Variable Illustration
+#   
+#   oldStateDict and stateDict are all Dictionary
+#   including following keys:
+#       'FullName'              :   TSE's FullName, data directly from the PermaLink.
+#       'AgentState'            :   TSE's AgentState, data directly from the PermaLink. 
+#                                   Value includes Ready, Not Ready, Talking, Work Ready, Logged Off.
+#       'TimeInState'           :   TSE's TimeInState, data directly from the PeramLink.
+#                                   Time in the current AgentState showed in seconds.
+#       'OnShift'               :   If TSE is OnShift, data directly from the PermaLink.
+#       'CurrentState'          :   TSE's CurrentState, data have been processed.
+#                                   Processing method is illustrated from line 92 and 195.
+#       'CurrentStatePeriod'    :   TSE's CurrentStatePeriod, data have been processed.
+#                                   Time in CurrentState showed in seconds.
+#       'Talks'                 :   TSE's talks counter. Times in Talking state.
+#
+##################################################
 
 
 import time
@@ -21,7 +37,7 @@ localtime = time.localtime(time.time())
 
 try:
     #   only run between 9 AM and 6 PM
-    if (localtime[3] >= 9 and localtime[3] <= 20):
+    if (localtime[3] >= 9 and localtime[3] <= 18):
 
         #   Code has been run today
         if (os.path.exists("./Data/currentState.txt")):
@@ -34,9 +50,9 @@ try:
             awayNum =   int(f.readline().replace('\r','').replace('\n',''))
             allTalks=   int(f.readline().replace('\r','').replace('\n',''))
             waitNum =   int(f.readline().replace('\r','').replace('\n',''))
-            lines = f.readlines()
+            lines = f.readlines()       #   read the left 7*N lines
             i = 0
-            oldStateList = []
+            oldStateList = []           #   a List of Dictionary
             while (i!=len(lines)):
                 j = 0
                 oldStateDict = {}
@@ -58,17 +74,31 @@ try:
             print(oldTime)
             f.close()
 
+            #   initializing
+            stateList = []                      #   new state list
+            freeNum   = 0
+            busyNum   = 0
+            awayNum   = 0
+
             #   pre-processing
-            currentTime = int(time.time())
-            xml =  getCurrentState.get()
-            waitNum = getCallinQueue.get()
-            stateList = []
+            currentTime = int(time.time())      #   get current time
+            xml =  getCurrentState.get()        #   get current state xml
+            waitNum = getCallinQueue.get()      #   get current call in queue
+
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
                 stateList.append(stateDict)
-            freeNum = 0
-            busyNum = 0
-            awayNum = 0
+
+            ###########################################
+            #   state convert
+            #       OnShift + Ready         --> Free
+            #       OnShift + Talking       --> Busy
+            #       OnShift + Work Ready    --> Busy
+            #       OnShift + Not Ready     --> Away
+            #       OnShift + Else          --> ErrState
+            #       ---
+            #       OffShift                --> Offline
+            ############################################
             for stateDict in stateList:
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
@@ -98,16 +128,11 @@ try:
                         else:
                             stateDict['Talks'] = oldStateDict['Talks']
                         #   Current State Period Calculating
-                        if stateDict['AgentState']==oldStateDict['AgentState'] and stateDict['OnShift']==oldStateDict['OnShift']:
-                            #   no state changing
-                            if oldStateDict['CurrentStatePeriod']=='NULL':
-                                stateDict['CurrentStatePeriod'] = 'NULL'
-                            else:
-                                stateDict['CurrentStatePeriod'] = str(int(oldStateDict['CurrentStatePeriod'])+currentTime-oldTime)
-                        elif stateDict['AgentState']=='Work Ready' and oldStateDict['AgentState']=='Talking':
+                        if stateDict['AgentState']=='Work Ready' and oldStateDict['AgentState']=='Talking':
                             #   change from talking to work ready
                             stateDict['CurrentStatePeriod'] = str(int(oldStateDict['CurrentStatePeriod'])+currentTime-oldTime)
                         else:
+                            #   the other conditions
                             stateDict['CurrentStatePeriod'] = stateDict['TimeInState']
                 #   cannot find the same AE data from oldStateList
                 if flag:
@@ -159,19 +184,26 @@ try:
             waitNum   = 0
 
             #   processing
-            currentTime = int(time.time())
-            xml =  getCurrentState.get()
-            waitNum = getCallinQueue.get()
+            currentTime = int(time.time())      #   get current time
+            xml =  getCurrentState.get()        #   get current state xml
+            waitNum = getCallinQueue.get()      #   get current call in queue         
             
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
                 stateList.append(stateDict)
 
+            ###########################################
+            #   state convert
+            #       OnShift + Ready         --> Free
+            #       OnShift + Talking       --> Busy
+            #       OnShift + Work Ready    --> Busy
+            #       OnShift + Not Ready     --> Away
+            #       OnShift + Else          --> ErrState
+            #       ---
+            #       OffShift                --> Offline
+            ############################################
             for stateDict in stateList:
-                if stateDict['TimeInState']=='NULL':
-                    stateDict['CurrentStatePeriod']='NULL'
-                else:
-                    stateDict['CurrentStatePeriod']=stateDict['TimeInState']
+                stateDict['CurrentStatePeriod']=stateDict['TimeInState']
                 if stateDict['OnShift']=='true':
                     if stateDict['AgentState']=='Ready':
                         stateDict['CurrentState']='Free'
