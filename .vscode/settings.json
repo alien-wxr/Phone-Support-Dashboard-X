@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "C:\\Users\\eri.wang\\anaconda3\\envs\\ni\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }
