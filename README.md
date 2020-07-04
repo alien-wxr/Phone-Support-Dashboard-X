@@ -30,3 +30,9 @@
 1. The **main.py** cannot handle the situation that **currentState.txt** is damaged, which happens because python crashed when saving **currentState.txt**.
 
 ### **To Do** List
+
+1. Optimize the IO part of the python.
+
+### Log
+
+- **[2020-07-04]** Change the *currentState.txt* into the *currentState.csv*.
