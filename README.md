@@ -17,6 +17,9 @@
 
 ## Current version
 
+### 3. Dashboard X
+
+- With LabView NXG Web Module
 ![DashboardX](Resources/DashboardX.png)
 
 ### Goals
