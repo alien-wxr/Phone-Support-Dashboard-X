@@ -29,13 +29,16 @@ try:
         if(os.path.exists("./Data/currentState.csv")):
 
             #   Read data
-            basicData = pd.read_csv('./Data/currentState.csv', nrows=1)
-            agentData = pd.read_csv('./Data/currentState.csv', skiprows=2)
+            basicDF = pd.read_csv('./Data/currentState.csv', nrows=1)
+            basicData = basicDF.to_dict('records')[0]
+            print(basicData)
+            agentDF = pd.read_csv('./Data/currentState.csv', skiprows=2)
 
             #   pre-processing
             currentTime = int(time.time())
             xml =  getCurrentState.get()
-            waitNum = getCallinQueue.get()
+            basicData['waitNum'] = getCallinQueue.get()
+            print(basicData['waitNum'])
             stateList = []
             for item in xml:
                 stateDict = {'FullName':item[3],'AgentState':item[5],'TimeInState':item[6],'OnShift':item[9],'CurrentState':'','CurrentStatePeriod':'0','Talks':'0'}
