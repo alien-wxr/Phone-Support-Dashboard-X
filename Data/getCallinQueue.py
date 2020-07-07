@@ -12,7 +12,7 @@
 
 
 
-import spider
+from Data import spider
 from bs4 import BeautifulSoup
 import operator
 
