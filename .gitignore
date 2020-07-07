@@ -5,10 +5,11 @@ UI/Dashboard X.gcomp/nameList.txt
 UI/NI Project Data
 UI/.DS_Store
 UI/Dashboard X.gcomp/.DS_Store
-.DS_Store
+*.DS_Store
 *.pyc
 Data/currentState.txt
 UI/Photos
 nameList.txt
 Data/currentState.csv
 Data/errorLog.txt
+Data/__pycache__/
