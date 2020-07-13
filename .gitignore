@@ -13,3 +13,4 @@ nameList.txt
 Data/currentState.csv
 Data/errorLog.txt
 Data/__pycache__/
+.vscode/settings.json
