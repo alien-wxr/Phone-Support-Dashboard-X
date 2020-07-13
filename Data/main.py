@@ -28,8 +28,8 @@
 ##################################################
 
 
-import getCurrentState
-import getCallinQueue
+from Data import getCurrentState
+from Data import getCallinQueue
 import time
 import os
 import pandas as pd
